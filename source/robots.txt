@@ -13,4 +13,4 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://cwmima.github.io/sitemap.xml
+Sitemap: https://cwgavin.github.io/sitemap.xml
