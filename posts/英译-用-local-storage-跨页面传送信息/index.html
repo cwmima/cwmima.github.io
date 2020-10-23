@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>[英译] 用 local storage 跨页面传送信息 - Gavin Cheng</title>
+<meta name="google-site-verification" content="uZ6mo7jpVDq4f-QSMj6MKwAlQtpaOQajj0yM7nJuU3k" />
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Gavin Cheng">
+<meta name="description" content="跨页面交流的优雅解决方案">
+<meta name="keywords" content="">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?34549114">
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons"/>
+</noscript>
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Gavin Cheng" type="application/atom+xml">
+</head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item false" href="https://cwmima.github.io">
+                Home
+            </a>
+            <a class="a-block drawer-menu-item false" href="/archives">
+                Archive
+            </a>
+
+            
+            
+            <a class="a-block drawer-menu-item false" href="/About/index.html">
+                About
+            </a>
+            
+            <a class="a-block drawer-menu-item false" href="/tags/index.html">
+                Tags
+            </a>
+            
+
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            Gavin Cheng
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">Gavin Cheng</div>
+        <div class="single-column-header-subtitle">辛眉筆記</div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            Gavin's<br>Notebook
+        </div>
+        <div class="nav-subtitle">
+            辛眉筆記
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            Archive
+        </a>
+
+        
+        
+        <a class="a-block nav-link-item false" href="/About/index.html">
+            About
+        </a>
+        
+        <a class="a-block nav-link-item false" href="/tags/index.html">
+            Tags
+        </a>
+        
+
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="external nofollow noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="external nofollow noreferrer noopener">Makito</a><br>
+        
+        &copy; 2020 <a target="_blank" rel="noopener" href="https://github.com/cwmima">Gavin Cheng</a>
+    </div>
+</div>
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+    </div>
+</div>
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            <div class="post-head-wrapper-text-only"
+                 style="background-image: url('')">
+                <div class="post-title">
+                    [英译] 用 local storage 跨页面传送信息
+                    <div class="post-meta">
+                        <time datetime="2019-04-30T10:19:13.000Z" itemprop="datePublished">
+                            2019-04-30 22:19
+                        </time>&nbsp;
+                        
+    
+                        
+                        
+                        <i class="material-icons" style="">label</i>
+                        
+                        <a href='/tags/Front-end/'>Front-end</a>, 
+                        
+                        <a href='/tags/Translation/'>Translation</a>, 
+                        
+                        <a href='/tags/Javascript/'>Javascript</a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <p>原文：<a target="_blank" rel="noopener" href="https://ponyfoo.com/articles/cross-tab-communication">https://ponyfoo.com/articles/cross-tab-communication</a><br>翻译：辛眉</p>
+<br/>
+
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker">SharedWorker</a> API 允许我们在不同的 iframe，甚至不同的浏览器标签页和窗口之间传输信息。它在 Chrome，Firefox 上都能运行，但不被 Safari 支持。然而有一个被广泛支持的方法却不为人知，让我们来看看吧！</p>
+</blockquote>
+<p>我想用一种优雅的方法解决以下问题：假设有个人访问了你的网站，登录，打开另一个标签页，然后在那个标签页登出。这时他在第一个标签页仍然是“已登录”的状态，而他点击的所有东西都会重定向到登录页面，或者直接崩掉。一个更好的做法是我们能够知道他在第二个标签页已经登出了，然后显示一个对话框让他重新登录，或者直接显示登录框。</p>
+<p>你可以用 WebSocket API 来做，但是杀鸡焉用宰牛刀呢。我想通过更低级的技术来实现，所以我找了很多跨页面通讯的选项。我找到的第一个选项是用 cookies 或者 <code>localStorage</code>，然后用 <code>setInterval</code> 周期性检查用户是否还在登录状态。我不太满意这个答案，因为反复检查一个可能根本不会发生的事件实在太耗费 CPU 了。如果这样我宁可使用 Comet （一种维持与服务器端的连接并获取实时推送的技术，包括长轮询 long polling 和 iframe 流），Server-sent events 或者 WebSocket。</p>
+<p>然而我被骗了，事实上单靠 <code>localStorage</code> 就能搞定。</p>
+<p>你知道 <code>localStorage</code> 会触发事件吗？具体来说，当你进行添加、修改、删除的时候，就会在其他的浏览环境（browsing context）中触发一个事件。也就是说，当你在某个标签页上改动了 <code>localStorage</code>，其他标签页都能通过监听 <code>window</code> 上的 <code>storage</code> 事件来得知这一切：</p>
+<pre><code class="javascript">window.addEventListener(&#39;storage&#39;, function (event) &#123;
+  console.log(event.key, event.newValue);
+&#125;);</code></pre>
+<p><code>event</code> 对象包含以下相关属性：</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>key</code></td>
+<td>The affected key in <code>localStorage</code></td>
+</tr>
+<tr>
+<td><code>newValue</code></td>
+<td>The value that is currently assigned to that key</td>
+</tr>
+<tr>
+<td><code>oldValue</code></td>
+<td>The value before modification</td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td>The URL of the page where the change occurred</td>
+</tr>
+<tr>
+<td><br/></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>当你在某个页面上修改 <code>localStorage</code> 时，会在除了该页面以外的其他所有标签页触发事件，这意味着我们可以通过它来跨页面传递信息。</p>
+<pre><code class="javascript">var loggedOn;
+
+// TODO: call when logged-in user changes or logs out
+logonChanged();
+
+window.addEventListener(&#39;storage&#39;, updateLogon);
+window.addEventListener(&#39;focus&#39;, checkLogon);
+
+function getUsernameOrNull () &#123;
+  // TODO: return whether the user is logged on
+&#125;
+
+// 用户在该页面登录时，将登录状态记录进 localStorage
+function logonChanged () &#123;
+  var uname = getUsernameOrNull();
+  loggedOn = uname;
+  localStorage.setItem(&#39;logged-on&#39;, uname);
+&#125;
+
+// 用户在其他标签页登出时，捕获事件并更新登录状态
+function updateLogon (event) &#123;
+  if (event.key === &#39;logged-on&#39;) &#123;
+    loggedOn = event.newValue;
+  &#125;
+&#125;
+
+// 检查登录状态，若未登录则重新加载页面
+function checkLogon () &#123;
+  var uname = getUsernameOrNull();
+  if (uname !== loggedOn) &#123;
+    location.reload();
+  &#125;
+&#125;</code></pre>
+<p>当用户打开两个标签页，在其中一个登出，再回到另一个标签页，页面会重新加载，然后服务端逻辑会把用户带到其他页面。注意这里我们只在标签页被聚焦（focus）的情况下才检查登录状态，因为用户有可能在登出之后立刻再次登录，这种情况下我们不想把他们从所有标签页都登出。</p>
+<p>我们当然还可以改进这段代码，但它已经满足要求了。一个更好的实现可能是要求他们立刻登录，但注意这段代码还可以反过来：当他们登录后回到之前登出的标签页时，重新加载会让他们直接回到已登录状态。</p>
+<p>（译者注：接下来作者介绍了他自己做的一个 npm module，简化了 <code>localStorage</code> 的语法，并提升了兼容性。但在实际工作中，由于私人维护的包往往有很多不确定性甚至安全隐患，因此需要谨慎对待。因而略过不译。）</p>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <a class="newer-posts" href="/posts/%E6%97%A5%E8%AF%91-%E4%BB%A4%E5%92%8C%E4%BC%8A%E5%A7%8B%E7%9A%84%E5%96%A7%E5%9A%A3%E4%B8%8E%E8%82%83%E9%9D%99/">
+        Previous post<br>[日译] 令和伊始的喧嚣与肃静
+    </a>
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/posts/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E5%85%A8%E8%AE%B0%E5%BD%95/">
+        Next post<br>Hexo搭建博客踩坑全记录 (・ω・)
+    </a>
+    
+</nav>
+
+    
+            
+
+<div class="post-comment-wrapper">
+    <div id="disqus_thread"></div>
+</div>
+
+
+        </div>
+    </div>
+    <div class="single-column-footer">
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="external nofollow noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="external nofollow noreferrer noopener">Makito</a><br>
+    
+    &copy; 2020 <a target="_blank" rel="noopener" href="https://github.com/cwmima">Gavin Cheng</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"
+        integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"
+        integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js"
+        integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?48097017"></script>
+
+
+<script>
+    var disqus_shortname = 'cwmima';
+    var disqus_config = function () {
+        this.page.url = 'https://cwmima.github.io/posts/英译-用-local-storage-跨页面传送信息/';
+        this.page.identifier = '/posts/英译-用-local-storage-跨页面传送信息/';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.body || d.head).appendChild(s);
+    })();
+</script>
+
+
+</body>
+</html>

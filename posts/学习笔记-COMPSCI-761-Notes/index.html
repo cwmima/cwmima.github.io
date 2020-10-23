@@ -4,12 +4,12 @@
 <html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Archive: 2020 - Gavin Cheng</title>
+    <title>COMPSCI 761 Notes - Gavin Cheng</title>
 <meta name="google-site-verification" content="uZ6mo7jpVDq4f-QSMj6MKwAlQtpaOQajj0yM7nJuU3k" />
 <meta charset="utf-8">
 <meta name="X-UA-Compatible" content="IE=edge">
 <meta name="author" content="Gavin Cheng">
-<meta name="description" content="A Blog Powered By Hexo">
+<meta name="description" content="University of Auckland COMPSCI 761 - Artificial Intelligence">
 <meta name="keywords" content="">
 
     <meta charset="utf-8">
@@ -19,7 +19,7 @@
     <meta name="renderer" content="webkit">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/journal.css?16311567">
+<link rel="stylesheet" href="/css/journal.css?50452110">
 <script src="/js/loadCSS.js"></script>
 <script>
     loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
@@ -65,7 +65,7 @@
             <a class="a-block drawer-menu-item false" href="https://cwmima.github.io">
                 Home
             </a>
-            <a class="a-block drawer-menu-item active" href="/archives">
+            <a class="a-block drawer-menu-item false" href="/archives">
                 Archive
             </a>
 
@@ -118,7 +118,7 @@
     </a>
 
     <div class="nav-link-list">
-        <a class="a-block no-tint nav-link-item active" href="/archives">
+        <a class="a-block no-tint nav-link-item false" href="/archives">
             Archive
         </a>
 
@@ -153,88 +153,223 @@
         </a>
 
         
-        
-
-        
-
-        
-        
     </div>
 </div>
 
 <div ref="streamContainer" class="stream-container">
     <div class="post-list-container post-list-container-shadow">
-        
-        
-        <div class="post-item-wrapper post-item-wrapper-no-hover">
-            <div class="post-item post-item-no-gaps">
-                <div class="post-item-info-wrapper">
-                    <div class="post-item-title  post-item-title-small">
+        <div class="post">
+            <div class="post-head-wrapper-text-only"
+                 style="background-image: url('')">
+                <div class="post-title">
+                    COMPSCI 761 Notes
+                    <div class="post-meta">
+                        <time datetime="2020-06-29T21:00:00.000Z" itemprop="datePublished">
+                            2020-06-30 09:00
+                        </time>&nbsp;
                         
-                        <a href="/archives/2020/06">
-                            2020 / 06
-                        </a>
+    
+                        
+                        
+                        <i class="material-icons" style="">label</i>
+                        
+                        <a href='/tags/Notes/'>Notes</a>
+                        
                         
                     </div>
                 </div>
             </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <blockquote>
+<p>Course outline sorted out by myself for quick revision<br><i>University of Auckland COMPSCI 761 - Artificial Intelligence</i></p>
+</blockquote>
+<br/>
+
+<h2 id="Search"><a href="#Search" class="headerlink" title="Search"></a>Search</h2><hr/>
+
+<p><strong>Problem</strong></p>
+<ul>
+<li>Problem Space<ul>
+<li>states</li>
+<li>actions</li>
+</ul>
+</li>
+<li>Problem<ul>
+<li>initial state</li>
+<li>goal</li>
+</ul>
+</li>
+<li>Problem Solving - search for a path in a graph</li>
+<li>Problem Types<ul>
+<li>Single-state problem<ul>
+<li>Deterministic, fully observable  </li>
+<li>Agent knows exactly which state it will be in; solution is a sequence </li>
+</ul>
+</li>
+<li>Sensorless problem (conformant problem)<ul>
+<li>Non-observable </li>
+<li>Agent may have no idea where it is; solution (if any) is a sequence </li>
+</ul>
+</li>
+<li>Contingency problem<ul>
+<li>Nondeterministic and/or partially observable </li>
+<li>Percepts provide new information about current state </li>
+<li>Solution is a contingent plan or a policy </li>
+<li>Often interleaves search &amp; execution </li>
+</ul>
+</li>
+<li>Exploration problem (online problem) <ul>
+<li>Unknown state space <br/>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Uninformed Search</strong></p>
+<ul>
+<li>BFS</li>
+<li>DFS</li>
+<li>Iterative Deepening Search<br/>
+
+</li>
+</ul>
+<p>Tree Search + Closed List = Graph Search<br><br/></p>
+<p><strong>Informed Search</strong></p>
+<ul>
+<li>Best-First Search<ul>
+<li>Greedy</li>
+<li>A*</li>
+<li>Iterative Deepening A*</li>
+<li>Weighted A*</li>
+</ul>
+</li>
+<li>Heuristics</li>
+<li>Bidirectional Heuristic Search<ul>
+<li>Front-to-back (e.g. MM, NBS, GBFHS)</li>
+<li>Front-to-front</li>
+<li>Perimeter Search<br/>
+
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Local Search</strong></p>
+<ul>
+<li>Hill Climbing (best child)</li>
+<li>Stochastic Hill Climbing<ul>
+<li>First Choice</li>
+<li>Random Walking</li>
+<li>Random Restart</li>
+</ul>
+</li>
+<li>Local Beam Search (k best children)<ul>
+<li>Stochastic Beam Search</li>
+<li>Genetic Algorithm</li>
+</ul>
+</li>
+<li>Simulated Annealing<br/>
+
+</li>
+</ul>
+<p><strong>Adversarial Search</strong></p>
+<ul>
+<li>Minimax<ul>
+<li>Alpha-beta Pruning</li>
+</ul>
+</li>
+<li>Expectimax</li>
+<li>Look-ahead Tree</li>
+<li>Monte-Carlo Tree Search<ul>
+<li>Upper Confidence Bound<br/>
+
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Planning</strong></p>
+<ul>
+<li>Languages: State, Goal, State Update</li>
+<li>Predicates: positive/negative, fluent/static, primitive/derived, object level/meta level<br/>
+
+</li>
+</ul>
+<p><strong>Constraint Satisfaction Problem (CSP)</strong></p>
+<ul>
+<li>Variables, domains, constraints</li>
+<li>Backtracking Search (uninformed) - DFS for CSP</li>
+<li>Heuristics (informed)</li>
+<li>Constraint propagation<ul>
+<li>Forward checking</li>
+<li>Arc consistency</li>
+</ul>
+</li>
+<li>Local Search for CSP<br/>
+
+</li>
+</ul>
+<h2 id="Logic"><a href="#Logic" class="headerlink" title="Logic"></a>Logic</h2><hr/>
+
+<ul>
+<li>Entailment</li>
+<li>Inference</li>
+<li>Propositional Logic &nbsp; 命题逻辑</li>
+<li>Horn Clause/Form &nbsp; 霍恩子句</li>
+<li>Modus Ponens &nbsp; 肯定前件</li>
+<li>Resolution &nbsp; 归结</li>
+<li>Forward/Backward Chaining</li>
+<li>First Order Logic</li>
+<li>Unification</li>
+<li>Generalized Modus Ponens<img src="logic.png" width="450px">
+
+</li>
+</ul>
+<br/>
+
+<h2 id="Classic-AI"><a href="#Classic-AI" class="headerlink" title="Classic AI"></a>Classic AI</h2><hr/>
+
+<ul>
+<li>Expert System (KBS)</li>
+<li>Knowledge Elicitation</li>
+<li>Knowledge Engineering</li>
+<li>Ontology<ul>
+<li>Conceptual Graph</li>
+<li>Knowledge Interchange Format (KIF)</li>
+</ul>
+</li>
+<li>Case-Based Reasoning (CBR)</li>
+</ul>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <a class="newer-posts" href="/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-753-Notes/">
+        Previous post<br>COMPSCI 753 Notes
+    </a>
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-STATS-707-Notes/">
+        Next post<br>STATS 707 Notes
+    </a>
+    
+</nav>
+
+    
+            
+
+<div class="post-comment-wrapper">
+    <div id="disqus_thread"></div>
+</div>
+
+
         </div>
-        
-
-        <a href="/posts/学习笔记-COMPSCI-753-Notes/" class="a-block">
-            <div class="post-item-wrapper">
-                <div class="post-item post-item-no-gaps">
-                    <div class="post-item-info-wrapper">
-                        <div class="post-item-title">
-                            COMPSCI 753 Notes
-                        </div>
-                        <div class="post-item-meta">
-                            2020-06-30
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        
-        
-
-        <a href="/posts/学习笔记-COMPSCI-761-Notes/" class="a-block">
-            <div class="post-item-wrapper">
-                <div class="post-item post-item-no-gaps">
-                    <div class="post-item-info-wrapper">
-                        <div class="post-item-title">
-                            COMPSCI 761 Notes
-                        </div>
-                        <div class="post-item-meta">
-                            2020-06-30
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        
-        
-
-        <a href="/posts/学习笔记-STATS-707-Notes/" class="a-block">
-            <div class="post-item-wrapper">
-                <div class="post-item post-item-no-gaps">
-                    <div class="post-item-info-wrapper">
-                        <div class="post-item-title">
-                            STATS 707 Notes
-                        </div>
-                        <div class="post-item-meta">
-                            2020-06-30
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        
     </div>
-
     <div class="single-column-footer">
     
     Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="external nofollow noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="external nofollow noreferrer noopener">Makito</a><br>
@@ -254,7 +389,23 @@
         integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js"
         integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
-<script src="/js/journal.js?95451633"></script>
+<script src="/js/journal.js?29452700"></script>
+
+
+<script>
+    var disqus_shortname = 'cwmima';
+    var disqus_config = function () {
+        this.page.url = 'https://cwmima.github.io/posts/学习笔记-COMPSCI-761-Notes/';
+        this.page.identifier = '/posts/学习笔记-COMPSCI-761-Notes/';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.body || d.head).appendChild(s);
+    })();
+</script>
+
 
 </body>
 </html>

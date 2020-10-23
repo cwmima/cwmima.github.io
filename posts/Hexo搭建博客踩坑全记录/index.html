@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Hexo搭建博客踩坑全记录 (・ω・) - Gavin Cheng</title>
+<meta name="google-site-verification" content="uZ6mo7jpVDq4f-QSMj6MKwAlQtpaOQajj0yM7nJuU3k" />
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Gavin Cheng">
+<meta name="description" content="人这一辈子就是不断地给自己挖坑">
+<meta name="keywords" content="">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?68186526">
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons"/>
+</noscript>
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Gavin Cheng" type="application/atom+xml">
+</head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item false" href="https://cwmima.github.io">
+                Home
+            </a>
+            <a class="a-block drawer-menu-item false" href="/archives">
+                Archive
+            </a>
+
+            
+            
+            <a class="a-block drawer-menu-item false" href="/About/index.html">
+                About
+            </a>
+            
+            <a class="a-block drawer-menu-item false" href="/tags/index.html">
+                Tags
+            </a>
+            
+
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            Gavin Cheng
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">Gavin Cheng</div>
+        <div class="single-column-header-subtitle">辛眉筆記</div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            Gavin's<br>Notebook
+        </div>
+        <div class="nav-subtitle">
+            辛眉筆記
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            Archive
+        </a>
+
+        
+        
+        <a class="a-block nav-link-item false" href="/About/index.html">
+            About
+        </a>
+        
+        <a class="a-block nav-link-item false" href="/tags/index.html">
+            Tags
+        </a>
+        
+
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="external nofollow noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="external nofollow noreferrer noopener">Makito</a><br>
+        
+        &copy; 2020 <a target="_blank" rel="noopener" href="https://github.com/cwmima">Gavin Cheng</a>
+    </div>
+</div>
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+    </div>
+</div>
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            <div class="post-head-wrapper"
+                 style="background-image: url('/posts/Hexo搭建博客踩坑全记录/blog.jpg')">
+                <div class="post-title">
+                    Hexo搭建博客踩坑全记录 (・ω・)
+                    <div class="post-meta">
+                        <time datetime="2019-04-13T03:00:25.000Z" itemprop="datePublished">
+                            2019-04-13 15:00
+                        </time>&nbsp;
+                        
+    
+                        
+                        
+                        <i class="material-icons" style="">label</i>
+                        
+                        <a href='/tags/Hexo/'>Hexo</a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <p>之前用 Jekyll + GitHub Pages 做过一个个人博客，大概类似于 <a target="_blank" rel="noopener" href="https://onevcat.com/">https://onevcat.com/</a> 这种风格的，打开先是一个封面，然后通过下面的链接转向不同地方。但由于我一直对这个主题有一些不太满意的地方，再加上荒废了一年时间没有写过一篇博客，所以现在决定用 Hexo 重新做一次。为什么改用 Hexo？很简单，因为印象中 Jekyll 用起来有点麻烦。博客毕竟只是记录生活感想或者学习笔记的工具，如果花费过多的时间在工具本身，我觉得就有点本末倒置了。</p>
+<blockquote>
+<p>⚠️ 注意：本文假设 GitHub Pages 已经设置完毕，不了解的同学可以看<a target="_blank" rel="noopener" href="https://pages.github.com/">官网</a>的详细指导。</p>
+</blockquote>
+<h1 id="首先，为什么要写博客？"><a href="#首先，为什么要写博客？" class="headerlink" title="首先，为什么要写博客？"></a>首先，为什么要写博客？</h1><p>这个问题我还没想好，等我开始写了再回答（笑）。</p>
+<h1 id="选主题"><a href="#选主题" class="headerlink" title="选主题"></a>选主题</h1><p>搭建这种简易博客的第一件事大概就是选主题了。我在 Hexo 上浏览了一番，看到了这个主题：</p>
+<img src="活版印字.png" width="500px">
+
+<p>活版印字？示例文章好像还放了朱自清的《背影》和夏目漱石的《我是猫》，嗯，看上去好像不错的样子。于是我点开了它——</p>
+<img src="Screen Shot 2019-04-13 at 6.59.37 PM.png" width="500px">
+
+<img src="why.jpg" width="70px"> 
+
+<p>图文不符啊亲？</p>
+<p>……不过还是很好看啊，算了就决定是你了。</p>
+<h1 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h1><p>按照 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo 官网</a> 上的代码安装并初始化了一个博客网站，在本地运行了一下，不错。虽然默认主题不是很好看，但我们可以稍后修改，现在先将这个初始化的结果 commit 到 GitHub 吧。</p>
+<p>然而 Hexo 立刻就给了刚见面的我一个下马威 :)  GitHub 发来一封<code>Page build failure</code>邮件：</p>
+<pre><code>The tag `fancybox` on line 77 in `themes/landscape/README.md` is not a recognized Liquid tag.</code></pre>
+<p>在 google 一番之后发现原因很简单，Hexo 在默认主题的 README 中使用了一个不受支持的 tag，只要把出问题的这一行注释掉，或者索性把 README 删掉就没问题了。接下来安装我中意的主题，主题作者在<a target="_blank" rel="noopener" href="https://github.com/SumiMakito/hexo-theme-Journal">这里</a>有安装指导。然后我们再 commit：</p>
+<pre><code>The page build completed successfully, but returned the following warning for the `master` branch:
+
+You are attempting to use a Jekyll theme, &quot;journal&quot;, which is not supported by GitHub Pages.</code></pre>
+<p>都说真男人从不回头看爆炸，真程序员从不回头看 warning，既然 build completed successfully，那么这种区区小 warning 我也是不想去管他的。</p>
+<img src="404.png" width="500px">
+
+<p>404警告</p>
+<p>……好吧，我们老老实实去解决这个 warning，否则网站打不开。我找到了一个 GitHub Issue，给出的解决方法是 lock Hexo version to 3.3.1，我试了一下没有作用。接着我找到了这篇文章：<a target="_blank" rel="noopener" href="https://liguanghe.github.io/2017/11/06/blogRebuilt/">hexo 博客的神坑及本质原因</a> ，这篇神一般的文章奇迹般地拯救了我可能要浪费的大把时间和脆弱又宝贵的自信心。在这篇文章的指导下我发现我的博客此时已经陷入死胡同，挽救不回来了（……）。好的，那让我们删除掉刚刚做好的所有东西，重新开始吧 ( ´▽｀)</p>
+<p>在这篇神文的指导下我很快就把博客搭建好了，但在进行个性化设置的时候还是碰到了一些问题。</p>
+<h1 id="添加标签页"><a href="#添加标签页" class="headerlink" title="添加标签页"></a>添加标签页</h1><p>首先，给 Hexo 站点添加一个页面的 command：</p>
+<pre><code>hexo new page &lt;页面名称&gt;</code></pre>
+<p>要在命令行运行。不知道什么是/怎么用命令行工具的同学请出门右转参加 WordPress 建站讨论组（不是）。</p>
+<p>新建 tags 页面之后，网上普遍的说法是只要你在 Hexo 自动生成的 index.md 中添加以下设置就可以了：</p>
+<pre><code>---
+title: Tags
+type: &quot;tags&quot;
+---</code></pre>
+<p>我照做了，然而得到的却是一个空白的 Tags 页面。直到我看到了<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/29017171/answer/364705653">这个回答</a>…… 因为我安装的这个主题，它对应标签页的 ejs 文件不叫<code>tags.ejs</code>，而是<code>tag-index.ejs</code>。所以，划重点：添加<code>layout: &quot;tag-index&quot;</code>，就大功告成了。</p>
+<h1 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h1><p>Markdown 格式天生不支持图片的上传和保存，虽然我们有办法引用图片，却不知道应该把图片存储在哪里。有两种解决方式：1. 将文章的所有图片都保存在一个文件夹中，与文字和项目代码一起上传到 GitHub；2. 把图片上传到一个免费图床上，再在文章中引用图片网址。</p>
+<p>1 的优点在于图片掌握在自己手中，不会莫名其妙丢失。缺点是如果想把文章移植到别的地方，那么图片的搬运会是一项十分头疼的工作。2 的优点是利于文章直接复制粘贴到其他平台，缺点是一些免费图床不是很靠谱，有突然崩掉的可能性。如果你没有本地备份，那么有可能有些图片你是再也找不回来了。</p>
+<h1 id="对了，看了半天我还不知道……"><a href="#对了，看了半天我还不知道……" class="headerlink" title="对了，看了半天我还不知道……"></a>对了，看了半天我还不知道……</h1><p>嗯好的没问题，对于看完了这篇文章还不知道 Hexo 这个词到底要怎么念的同学，跟我念：黑克搜。</p>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <a class="newer-posts" href="/posts/%E8%8B%B1%E8%AF%91-%E7%94%A8-local-storage-%E8%B7%A8%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%81%E4%BF%A1%E6%81%AF/">
+        Previous post<br>[英译] 用 local storage 跨页面传送信息
+    </a>
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/posts/hello-world/">
+        Next post<br>Hello World
+    </a>
+    
+</nav>
+
+    
+            
+
+<div class="post-comment-wrapper">
+    <div id="disqus_thread"></div>
+</div>
+
+
+        </div>
+    </div>
+    <div class="single-column-footer">
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="external nofollow noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="external nofollow noreferrer noopener">Makito</a><br>
+    
+    &copy; 2020 <a target="_blank" rel="noopener" href="https://github.com/cwmima">Gavin Cheng</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"
+        integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"
+        integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js"
+        integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?51830355"></script>
+
+
+<script>
+    var disqus_shortname = 'cwmima';
+    var disqus_config = function () {
+        this.page.url = 'https://cwmima.github.io/posts/Hexo搭建博客踩坑全记录/';
+        this.page.identifier = '/posts/Hexo搭建博客踩坑全记录/';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.body || d.head).appendChild(s);
+    })();
+</script>
+
+
+</body>
+</html>

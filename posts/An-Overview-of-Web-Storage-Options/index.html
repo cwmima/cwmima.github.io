@@ -4,12 +4,12 @@
 <html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Archive: 2020 - Gavin Cheng</title>
+    <title>An Overview of Web Storage Options - Gavin Cheng</title>
 <meta name="google-site-verification" content="uZ6mo7jpVDq4f-QSMj6MKwAlQtpaOQajj0yM7nJuU3k" />
 <meta charset="utf-8">
 <meta name="X-UA-Compatible" content="IE=edge">
 <meta name="author" content="Gavin Cheng">
-<meta name="description" content="A Blog Powered By Hexo">
+<meta name="description" content="Web Storage, IndexedDB, Cache, and Cookies.">
 <meta name="keywords" content="">
 
     <meta charset="utf-8">
@@ -19,7 +19,7 @@
     <meta name="renderer" content="webkit">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/journal.css?16311567">
+<link rel="stylesheet" href="/css/journal.css?62174843">
 <script src="/js/loadCSS.js"></script>
 <script>
     loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
@@ -65,7 +65,7 @@
             <a class="a-block drawer-menu-item false" href="https://cwmima.github.io">
                 Home
             </a>
-            <a class="a-block drawer-menu-item active" href="/archives">
+            <a class="a-block drawer-menu-item false" href="/archives">
                 Archive
             </a>
 
@@ -118,7 +118,7 @@
     </a>
 
     <div class="nav-link-list">
-        <a class="a-block no-tint nav-link-item active" href="/archives">
+        <a class="a-block no-tint nav-link-item false" href="/archives">
             Archive
         </a>
 
@@ -153,88 +153,152 @@
         </a>
 
         
-        
-
-        
-
-        
-        
     </div>
 </div>
 
 <div ref="streamContainer" class="stream-container">
     <div class="post-list-container post-list-container-shadow">
-        
-        
-        <div class="post-item-wrapper post-item-wrapper-no-hover">
-            <div class="post-item post-item-no-gaps">
-                <div class="post-item-info-wrapper">
-                    <div class="post-item-title  post-item-title-small">
+        <div class="post">
+            <div class="post-head-wrapper-text-only"
+                 style="background-image: url('')">
+                <div class="post-title">
+                    An Overview of Web Storage Options
+                    <div class="post-meta">
+                        <time datetime="2019-05-03T21:20:47.000Z" itemprop="datePublished">
+                            2019-05-04 09:20
+                        </time>&nbsp;
                         
-                        <a href="/archives/2020/06">
-                            2020 / 06
-                        </a>
+    
+                        
+                        
+                        <i class="material-icons" style="">label</i>
+                        
+                        <a href='/tags/Front-end/'>Front-end</a>
+                        
                         
                     </div>
                 </div>
             </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <img src="web-storage-options.png" width="200px">
+
+<p>⚠️ Web SQL and Application Cache are deprecated.<br><br/></p>
+<p><strong>Modern Storage APIs:</strong></p>
+<ul>
+<li>Web Storage API<ul>
+<li>A mechanism by which browsers can securely store key/value pairs.</li>
+<li>Local Storage<ul>
+<li>Provides a permanent storage.</li>
+<li>Basic usage:<ul>
+<li><code>localStorage.setItem(&#39;key&#39;, &#39;value&#39;);</code></li>
+<li><code>localStorage.getItem(&#39;key&#39;);</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Session Storage<ul>
+<li>Maintains data on page sessions. Opening a page in a new tab or window will initiate a new page session, hence having different Session Storage instances for the same site. The page session survives over page reloads and restores until you close the browser. </li>
+<li>Basic usage:<ul>
+<li><code>sessionStorage.setItem(&#39;key&#39;, &#39;value&#39;);</code></li>
+<li><code>sessionStorage.getItem(&#39;key&#39;);</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>IndexedDB<ul>
+<li>A low-level API for client-side storage of significant amounts of structured data, including files/blobs. <br/>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>Other Options:</strong></p>
+<ul>
+<li><p>Cookies</p>
+<ul>
+<li><p>A small piece of data from server and sent back to server with every request from client, typically used to identify if two requests came from the same browser. It’s a stateful solution on stateless HTTP protocol. </p>
+</li>
+<li><p>Session Cookies</p>
+<ul>
+<li>Expires when you close the browser.</li>
+</ul>
+</li>
+<li><p>Permanent Cookies</p>
+<ul>
+<li>Expires at a specific date (<code>Expires</code>) or after a specific length of time (<code>Max-Age</code>)</li>
+</ul>
+</li>
+<li><p>Basic usage:</p>
+<ul>
+<li><p><code>Set-Cookie: &lt;name&gt;=&lt;value&gt;</code> in response header: </p>
+<pre><code>HTTP/2.0 200 OK
+Content-type: text/html
+Set-Cookie: sessionid=c270e9a6
+Set-Cookie: csrftoken=juILC73NMNnGq
+
+[page content]</code></pre>
+</li>
+<li><p>Now every new request sent from client will include a <code>Cookie</code> header:</p>
+<pre><code>GET /sample_page.html HTTP/2.0
+Host: www.example.org
+Cookie: sessionid=a270e9a6; csrftoken=juILC73NMNnGq</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Cache API</p>
+<ul>
+<li>A system for storing and retrieving network requests and corresponding responses. It was created to enable Service Workers to cache network requests in order to provide appropriate responses while offline. However, it can also be used for storage purposes as it can save blobs, jsons, form data objects, and etc as <code>Response</code> objects. </li>
+<li>Basic usage:<ul>
+<li>Feature Detection: <code>const cacheAvailable = &#39;caches&#39; in self;</code><br/>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>Side Note:</strong></p>
+<ul>
+<li>Service Worker<ul>
+<li>A proxy that sits between web applications, the browser, and the network (when available). In order to create an effective offline experiences, they intercept network requests, cache responses, push notification and do background syncs. </li>
+<li>Runs in a worker context, non-blocking, no DOM access. </li>
+</ul>
+</li>
+</ul>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <a class="newer-posts" href="/posts/%E7%99%BD%E6%9D%BF%E6%8E%A8%E5%AF%BC-%E9%A2%91%E7%8E%87%E6%B4%BE-vs-%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%B4%BE/">
+        Previous post<br>[Notes] 频率派 vs. 贝叶斯派
+    </a>
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/posts/%E6%97%A5%E8%AF%91-%E4%BB%A4%E5%92%8C%E4%BC%8A%E5%A7%8B%E7%9A%84%E5%96%A7%E5%9A%A3%E4%B8%8E%E8%82%83%E9%9D%99/">
+        Next post<br>[日译] 令和伊始的喧嚣与肃静
+    </a>
+    
+</nav>
+
+    
+            
+
+<div class="post-comment-wrapper">
+    <div id="disqus_thread"></div>
+</div>
+
+
         </div>
-        
-
-        <a href="/posts/学习笔记-COMPSCI-753-Notes/" class="a-block">
-            <div class="post-item-wrapper">
-                <div class="post-item post-item-no-gaps">
-                    <div class="post-item-info-wrapper">
-                        <div class="post-item-title">
-                            COMPSCI 753 Notes
-                        </div>
-                        <div class="post-item-meta">
-                            2020-06-30
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        
-        
-
-        <a href="/posts/学习笔记-COMPSCI-761-Notes/" class="a-block">
-            <div class="post-item-wrapper">
-                <div class="post-item post-item-no-gaps">
-                    <div class="post-item-info-wrapper">
-                        <div class="post-item-title">
-                            COMPSCI 761 Notes
-                        </div>
-                        <div class="post-item-meta">
-                            2020-06-30
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        
-        
-
-        <a href="/posts/学习笔记-STATS-707-Notes/" class="a-block">
-            <div class="post-item-wrapper">
-                <div class="post-item post-item-no-gaps">
-                    <div class="post-item-info-wrapper">
-                        <div class="post-item-title">
-                            STATS 707 Notes
-                        </div>
-                        <div class="post-item-meta">
-                            2020-06-30
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        
     </div>
-
     <div class="single-column-footer">
     
     Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="external nofollow noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="external nofollow noreferrer noopener">Makito</a><br>
@@ -254,7 +318,23 @@
         integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js"
         integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
-<script src="/js/journal.js?95451633"></script>
+<script src="/js/journal.js?57891796"></script>
+
+
+<script>
+    var disqus_shortname = 'cwmima';
+    var disqus_config = function () {
+        this.page.url = 'https://cwmima.github.io/posts/An-Overview-of-Web-Storage-Options/';
+        this.page.identifier = '/posts/An-Overview-of-Web-Storage-Options/';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.body || d.head).appendChild(s);
+    })();
+</script>
+
 
 </body>
 </html>
