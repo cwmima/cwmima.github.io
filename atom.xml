@@ -3,11 +3,11 @@
   <title>Gavin Cheng</title>
   
   
-  <link href="https://cwmima.github.io/atom.xml" rel="self"/>
+  <link href="https://cwgavin.github.io/atom.xml" rel="self"/>
   
-  <link href="https://cwmima.github.io/"/>
+  <link href="https://cwgavin.github.io/"/>
   <updated>2020-10-23T21:13:05.427Z</updated>
-  <id>https://cwmima.github.io/</id>
+  <id>https://cwgavin.github.io/</id>
   
   <author>
     <name>Gavin Cheng</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>COMPSCI 753 Notes</title>
-    <link href="https://cwmima.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-753-Notes/"/>
-    <id>https://cwmima.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-753-Notes/</id>
+    <link href="https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-753-Notes/"/>
+    <id>https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-753-Notes/</id>
     <published>2020-06-29T21:00:00.000Z</published>
     <updated>2020-10-23T21:13:05.427Z</updated>
     
@@ -31,18 +31,18 @@
     
     
     
-    <category term="Notes" scheme="https://cwmima.github.io/tags/Notes/"/>
+    <category term="Notes" scheme="https://cwgavin.github.io/tags/Notes/"/>
     
   </entry>
   
   <entry>
     <title>COMPSCI 761 Notes</title>
-    <link href="https://cwmima.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-761-Notes/"/>
-    <id>https://cwmima.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-761-Notes/</id>
+    <link href="https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-761-Notes/"/>
+    <id>https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-761-Notes/</id>
     <published>2020-06-29T21:00:00.000Z</published>
-    <updated>2020-10-23T21:13:05.410Z</updated>
+    <updated>2020-10-23T23:11:53.743Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>Course outline sorted out by myself for quick revision<br><i>University of Auckland COMPSCI 761 - Artificial Intelligence</i></p></blockquote><br/><h2 id="Search"><a href="#Search" class="headerlink" title="Search"></a>Search</h2><hr/><p><strong>Problem</strong></p><ul><li>Problem Space<ul><li>states</li><li>actions</li></ul></li><li>Problem<ul><li>initial state</li><li>goal</li></ul></li><li>Problem Solving - search for a path in a graph</li><li>Problem Types<ul><li>Single-state problem<ul><li>Deterministic, fully observable  </li><li>Agent knows exactly which state it will be in; solution is a sequence </li></ul></li><li>Sensorless problem (conformant problem)<ul><li>Non-observable </li><li>Agent may have no idea where it is; solution (if any) is a sequence </li></ul></li><li>Contingency problem<ul><li>Nondeterministic and/or partially observable </li><li>Percepts provide new information about current state </li><li>Solution is a contingent plan or a policy </li><li>Often interleaves search &amp; execution </li></ul></li><li>Exploration problem (online problem) <ul><li>Unknown state space <br/></li></ul></li></ul></li></ul><p><strong>Uninformed Search</strong></p><ul><li>BFS</li><li>DFS</li><li>Iterative Deepening Search<br/></li></ul><p>Tree Search + Closed List = Graph Search<br><br/></p><p><strong>Informed Search</strong></p><ul><li>Best-First Search<ul><li>Greedy</li><li>A*</li><li>Iterative Deepening A*</li><li>Weighted A*</li></ul></li><li>Heuristics</li><li>Bidirectional Heuristic Search<ul><li>Front-to-back (e.g. MM, NBS, GBFHS)</li><li>Front-to-front</li><li>Perimeter Search<br/></li></ul></li></ul><p><strong>Local Search</strong></p><ul><li>Hill Climbing (best child)</li><li>Stochastic Hill Climbing<ul><li>First Choice</li><li>Random Walking</li><li>Random Restart</li></ul></li><li>Local Beam Search (k best children)<ul><li>Stochastic Beam Search</li><li>Genetic Algorithm</li></ul></li><li>Simulated Annealing<br/></li></ul><p><strong>Adversarial Search</strong></p><ul><li>Minimax<ul><li>Alpha-beta Pruning</li></ul></li><li>Expectimax</li><li>Look-ahead Tree</li><li>Monte-Carlo Tree Search<ul><li>Upper Confidence Bound<br/></li></ul></li></ul><p><strong>Planning</strong></p><ul><li>Languages: State, Goal, State Update</li><li>Predicates: positive/negative, fluent/static, primitive/derived, object level/meta level<br/></li></ul><p><strong>Constraint Satisfaction Problem (CSP)</strong></p><ul><li>Variables, domains, constraints</li><li>Backtracking Search (uninformed) - DFS for CSP</li><li>Heuristics (informed)</li><li>Constraint propagation<ul><li>Forward checking</li><li>Arc consistency</li></ul></li><li>Local Search for CSP<br/></li></ul><h2 id="Logic"><a href="#Logic" class="headerlink" title="Logic"></a>Logic</h2><hr/><ul><li>Entailment</li><li>Inference</li><li>Propositional Logic &nbsp; 命题逻辑</li><li>Horn Clause/Form &nbsp; 霍恩子句</li><li>Modus Ponens &nbsp; 肯定前件</li><li>Resolution &nbsp; 归结</li><li>Forward/Backward Chaining</li><li>First Order Logic</li><li>Unification</li><li>Generalized Modus Ponens<img src="logic.png" width="450px"></li></ul><br/><h2 id="Classic-AI"><a href="#Classic-AI" class="headerlink" title="Classic AI"></a>Classic AI</h2><hr/><ul><li>Expert System (KBS)</li><li>Knowledge Elicitation</li><li>Knowledge Engineering</li><li>Ontology<ul><li>Conceptual Graph</li><li>Knowledge Interchange Format (KIF)</li></ul></li><li>Case-Based Reasoning (CBR)</li></ul>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>Course outline sorted out by myself for quick revision<br><i>University of Auckland COMPSCI 761 - Artificial Intelligence</i></p></blockquote><br/><h2 id="Search"><a href="#Search" class="headerlink" title="Search"></a>Search</h2><hr/><p><strong>Problem</strong></p><ul><li>Problem Space<ul><li>states</li><li>actions</li></ul></li><li>Problem<ul><li>initial state</li><li>goal</li></ul></li><li>Problem Solving - search for a path in a graph</li><li>Problem Types<ul><li>Single-state problem<ul><li>Deterministic, fully observable  </li><li>Agent knows exactly which state it will be in; solution is a sequence </li></ul></li><li>Sensorless problem (conformant problem)<ul><li>Non-observable </li><li>Agent may have no idea where it is; solution (if any) is a sequence </li></ul></li><li>Contingency problem<ul><li>Nondeterministic and/or partially observable </li><li>Percepts provide new information about current state </li><li>Solution is a contingent plan or a policy </li><li>Often interleaves search &amp; execution </li></ul></li><li>Exploration problem (online problem) <ul><li>Unknown state space <br/></li></ul></li></ul></li></ul><p><strong>Uninformed Search</strong></p><ul><li>BFS</li><li>DFS</li><li>Iterative Deepening Search<br/></li></ul><p>Tree Search + Closed List = Graph Search<br><br/></p><p><strong>Informed Search</strong></p><ul><li>Best-First Search<ul><li>Greedy</li><li>A*</li><li>Iterative Deepening A*</li><li>Weighted A*</li></ul></li><li>Heuristics</li><li>Bidirectional Heuristic Search<ul><li>Front-to-back (e.g. MM, NBS, GBFHS)</li><li>Front-to-front</li><li>Perimeter Search<br/></li></ul></li></ul><p><strong>Local Search</strong></p><ul><li>Hill Climbing (best child)</li><li>Stochastic Hill Climbing<ul><li>First Choice</li><li>Random Walking</li><li>Random Restart</li></ul></li><li>Local Beam Search (k best children)<ul><li>Stochastic Beam Search</li><li>Genetic Algorithm</li></ul></li><li>Simulated Annealing<br/></li></ul><p><strong>Adversarial Search</strong></p><ul><li>Minimax<ul><li>Alpha-beta Pruning</li></ul></li><li>Expectimax</li><li>Look-ahead Tree</li><li>Monte-Carlo Tree Search<ul><li>Upper Confidence Bound<br/></li></ul></li></ul><p><strong>Planning</strong></p><ul><li>Languages: State, Goal, State Update</li><li>Predicates: positive/negative, fluent/static, primitive/derived, object level/meta level<br/></li></ul><p><strong>Constraint Satisfaction Problem (CSP)</strong></p><ul><li>Variables, domains, constraints</li><li>Backtracking Search (uninformed) - DFS for CSP</li><li>Heuristics (informed)</li><li>Constraint propagation<ul><li>Forward checking</li><li>Arc consistency</li></ul></li><li>Local Search for CSP<br/></li></ul><h2 id="Logic"><a href="#Logic" class="headerlink" title="Logic"></a>Logic</h2><hr/><ul><li>Entailment</li><li>Inference</li><li>Propositional Logic &nbsp; 命题逻辑</li><li>Horn Clause/Form &nbsp; 霍恩子句</li><li>Modus Ponens &nbsp; 肯定前件</li><li>Resolution &nbsp; 归结</li><li>Forward/Backward Chaining</li><li>First Order Logic</li><li>Unification</li><li>Generalized Modus Ponens</li></ul><p><img src="logic.png" width="450px"></img></p><br/><h2 id="Classic-AI"><a href="#Classic-AI" class="headerlink" title="Classic AI"></a>Classic AI</h2><hr/><ul><li>Expert System (KBS)</li><li>Knowledge Elicitation</li><li>Knowledge Engineering</li><li>Ontology<ul><li>Conceptual Graph</li><li>Knowledge Interchange Format (KIF)</li></ul></li><li>Case-Based Reasoning (CBR)</li></ul>]]></content>
     
     
     <summary type="html">University of Auckland COMPSCI 761 - Artificial Intelligence</summary>
@@ -50,14 +50,14 @@
     
     
     
-    <category term="Notes" scheme="https://cwmima.github.io/tags/Notes/"/>
+    <category term="Notes" scheme="https://cwgavin.github.io/tags/Notes/"/>
     
   </entry>
   
   <entry>
     <title>STATS 707 Notes</title>
-    <link href="https://cwmima.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-STATS-707-Notes/"/>
-    <id>https://cwmima.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-STATS-707-Notes/</id>
+    <link href="https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-STATS-707-Notes/"/>
+    <id>https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-STATS-707-Notes/</id>
     <published>2020-06-29T21:00:00.000Z</published>
     <updated>2020-10-23T21:13:05.415Z</updated>
     
@@ -69,14 +69,14 @@
     
     
     
-    <category term="Notes" scheme="https://cwmima.github.io/tags/Notes/"/>
+    <category term="Notes" scheme="https://cwgavin.github.io/tags/Notes/"/>
     
   </entry>
   
   <entry>
     <title>[Notes] 北大公开课《变态心理学》手写笔记</title>
-    <link href="https://cwmima.github.io/posts/%E5%8C%97%E5%A4%A7%E5%85%AC%E5%BC%80%E8%AF%BE-%E5%8F%98%E6%80%81%E5%BF%83%E7%90%86%E5%AD%A6-%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0/"/>
-    <id>https://cwmima.github.io/posts/%E5%8C%97%E5%A4%A7%E5%85%AC%E5%BC%80%E8%AF%BE-%E5%8F%98%E6%80%81%E5%BF%83%E7%90%86%E5%AD%A6-%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0/</id>
+    <link href="https://cwgavin.github.io/posts/%E5%8C%97%E5%A4%A7%E5%85%AC%E5%BC%80%E8%AF%BE-%E5%8F%98%E6%80%81%E5%BF%83%E7%90%86%E5%AD%A6-%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0/"/>
+    <id>https://cwgavin.github.io/posts/%E5%8C%97%E5%A4%A7%E5%85%AC%E5%BC%80%E8%AF%BE-%E5%8F%98%E6%80%81%E5%BF%83%E7%90%86%E5%AD%A6-%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0/</id>
     <published>2020-01-12T22:02:35.000Z</published>
     <updated>2020-10-23T22:50:57.863Z</updated>
     
@@ -88,14 +88,14 @@
     
     
     
-    <category term="Notes" scheme="https://cwmima.github.io/tags/Notes/"/>
+    <category term="Notes" scheme="https://cwgavin.github.io/tags/Notes/"/>
     
   </entry>
   
   <entry>
     <title>[Notes] 频率派 vs. 贝叶斯派</title>
-    <link href="https://cwmima.github.io/posts/%E7%99%BD%E6%9D%BF%E6%8E%A8%E5%AF%BC-%E9%A2%91%E7%8E%87%E6%B4%BE-vs-%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%B4%BE/"/>
-    <id>https://cwmima.github.io/posts/%E7%99%BD%E6%9D%BF%E6%8E%A8%E5%AF%BC-%E9%A2%91%E7%8E%87%E6%B4%BE-vs-%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%B4%BE/</id>
+    <link href="https://cwgavin.github.io/posts/%E7%99%BD%E6%9D%BF%E6%8E%A8%E5%AF%BC-%E9%A2%91%E7%8E%87%E6%B4%BE-vs-%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%B4%BE/"/>
+    <id>https://cwgavin.github.io/posts/%E7%99%BD%E6%9D%BF%E6%8E%A8%E5%AF%BC-%E9%A2%91%E7%8E%87%E6%B4%BE-vs-%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%B4%BE/</id>
     <published>2019-12-15T20:37:00.000Z</published>
     <updated>2020-10-23T21:13:05.428Z</updated>
     
@@ -107,14 +107,14 @@
     
     
     
-    <category term="Notes" scheme="https://cwmima.github.io/tags/Notes/"/>
+    <category term="Notes" scheme="https://cwgavin.github.io/tags/Notes/"/>
     
   </entry>
   
   <entry>
     <title>An Overview of Web Storage Options</title>
-    <link href="https://cwmima.github.io/posts/An-Overview-of-Web-Storage-Options/"/>
-    <id>https://cwmima.github.io/posts/An-Overview-of-Web-Storage-Options/</id>
+    <link href="https://cwgavin.github.io/posts/An-Overview-of-Web-Storage-Options/"/>
+    <id>https://cwgavin.github.io/posts/An-Overview-of-Web-Storage-Options/</id>
     <published>2019-05-03T21:20:47.000Z</published>
     <updated>2020-10-23T21:13:05.389Z</updated>
     
@@ -126,14 +126,14 @@
     
     
     
-    <category term="Front-end" scheme="https://cwmima.github.io/tags/Front-end/"/>
+    <category term="Front-end" scheme="https://cwgavin.github.io/tags/Front-end/"/>
     
   </entry>
   
   <entry>
     <title>[日译] 令和伊始的喧嚣与肃静</title>
-    <link href="https://cwmima.github.io/posts/%E6%97%A5%E8%AF%91-%E4%BB%A4%E5%92%8C%E4%BC%8A%E5%A7%8B%E7%9A%84%E5%96%A7%E5%9A%A3%E4%B8%8E%E8%82%83%E9%9D%99/"/>
-    <id>https://cwmima.github.io/posts/%E6%97%A5%E8%AF%91-%E4%BB%A4%E5%92%8C%E4%BC%8A%E5%A7%8B%E7%9A%84%E5%96%A7%E5%9A%A3%E4%B8%8E%E8%82%83%E9%9D%99/</id>
+    <link href="https://cwgavin.github.io/posts/%E6%97%A5%E8%AF%91-%E4%BB%A4%E5%92%8C%E4%BC%8A%E5%A7%8B%E7%9A%84%E5%96%A7%E5%9A%A3%E4%B8%8E%E8%82%83%E9%9D%99/"/>
+    <id>https://cwgavin.github.io/posts/%E6%97%A5%E8%AF%91-%E4%BB%A4%E5%92%8C%E4%BC%8A%E5%A7%8B%E7%9A%84%E5%96%A7%E5%9A%A3%E4%B8%8E%E8%82%83%E9%9D%99/</id>
     <published>2019-05-03T09:16:29.000Z</published>
     <updated>2020-10-23T21:13:05.425Z</updated>
     
@@ -145,16 +145,16 @@
     
     
     
-    <category term="Translation" scheme="https://cwmima.github.io/tags/Translation/"/>
+    <category term="Translation" scheme="https://cwgavin.github.io/tags/Translation/"/>
     
-    <category term="Japanese" scheme="https://cwmima.github.io/tags/Japanese/"/>
+    <category term="Japanese" scheme="https://cwgavin.github.io/tags/Japanese/"/>
     
   </entry>
   
   <entry>
     <title>[英译] 用 local storage 跨页面传送信息</title>
-    <link href="https://cwmima.github.io/posts/%E8%8B%B1%E8%AF%91-%E7%94%A8-local-storage-%E8%B7%A8%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%81%E4%BF%A1%E6%81%AF/"/>
-    <id>https://cwmima.github.io/posts/%E8%8B%B1%E8%AF%91-%E7%94%A8-local-storage-%E8%B7%A8%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%81%E4%BF%A1%E6%81%AF/</id>
+    <link href="https://cwgavin.github.io/posts/%E8%8B%B1%E8%AF%91-%E7%94%A8-local-storage-%E8%B7%A8%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%81%E4%BF%A1%E6%81%AF/"/>
+    <id>https://cwgavin.github.io/posts/%E8%8B%B1%E8%AF%91-%E7%94%A8-local-storage-%E8%B7%A8%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%81%E4%BF%A1%E6%81%AF/</id>
     <published>2019-04-30T10:19:13.000Z</published>
     <updated>2020-10-23T21:13:05.432Z</updated>
     
@@ -166,18 +166,18 @@
     
     
     
-    <category term="Front-end" scheme="https://cwmima.github.io/tags/Front-end/"/>
+    <category term="Front-end" scheme="https://cwgavin.github.io/tags/Front-end/"/>
     
-    <category term="Translation" scheme="https://cwmima.github.io/tags/Translation/"/>
+    <category term="Translation" scheme="https://cwgavin.github.io/tags/Translation/"/>
     
-    <category term="Javascript" scheme="https://cwmima.github.io/tags/Javascript/"/>
+    <category term="Javascript" scheme="https://cwgavin.github.io/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>Hexo搭建博客踩坑全记录 (・ω・)</title>
-    <link href="https://cwmima.github.io/posts/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E5%85%A8%E8%AE%B0%E5%BD%95/"/>
-    <id>https://cwmima.github.io/posts/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E5%85%A8%E8%AE%B0%E5%BD%95/</id>
+    <link href="https://cwgavin.github.io/posts/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E5%85%A8%E8%AE%B0%E5%BD%95/"/>
+    <id>https://cwgavin.github.io/posts/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E5%85%A8%E8%AE%B0%E5%BD%95/</id>
     <published>2019-04-13T03:00:25.000Z</published>
     <updated>2020-10-23T21:13:05.403Z</updated>
     
@@ -189,14 +189,14 @@
     
     
     
-    <category term="Hexo" scheme="https://cwmima.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://cwgavin.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://cwmima.github.io/posts/hello-world/"/>
-    <id>https://cwmima.github.io/posts/hello-world/</id>
+    <link href="https://cwgavin.github.io/posts/hello-world/"/>
+    <id>https://cwgavin.github.io/posts/hello-world/</id>
     <published>2018-12-31T11:00:00.000Z</published>
     <updated>2020-10-23T21:13:05.394Z</updated>
     
