@@ -1,0 +1,25 @@
+sidebar_title: "Gavin's<br>Notebook"
+sidebar_subtitle: "辛眉筆記"
+
+truncate_len: 60
+
+# highlight_theme: normal
+# rss: atom.xml
+
+# Choose the comment service according to your need.
+# Please do not use the two services at the same time.
+livere: # [data-uid] for livere.com
+disqus: cwmima
+
+sitemap:
+  path: sitemap.xml
+
+# hexo-hide-posts
+hide_posts:
+  # Change the filter name to fit your need
+  filter: hidden
+  # Generators which you want to expose all posts (include hidden ones) to.
+  # Common generators: index, tag, category, archive, sitemap, feed, etc.
+  public_generators: []
+  # Add "noindex" meta tag to prevent hidden posts from being indexed by search engines
+  noindex: true

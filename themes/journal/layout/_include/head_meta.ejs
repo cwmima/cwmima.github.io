@@ -1,0 +1,10 @@
+<title><%= config.__title %></title>
+<meta name="google-site-verification" content="uZ6mo7jpVDq4f-QSMj6MKwAlQtpaOQajj0yM7nJuU3k" />
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="<%= config.author %>">
+<meta name="description" content="<%= config.__desc %>">
+<meta name="keywords" content="<%= page.keywords ? page.keywords : config.keywords ? config.keywords : "" %>">
+<% if(theme.rss){ %>
+<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="<%= config.root + theme.rss %>">
+<% } %>
