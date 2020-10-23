@@ -109,7 +109,8 @@ Tree Search + Closed List = Graph Search
 - First Order Logic
 - Unification
 - Generalized Modus Ponens
-<img src="logic.png" width="450px">
+
+<img src="logic.png" width="450px"></img>
 
 <br/>
 
