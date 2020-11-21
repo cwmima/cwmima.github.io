@@ -6,7 +6,7 @@
   <link href="https://cwgavin.github.io/atom.xml" rel="self"/>
   
   <link href="https://cwgavin.github.io/"/>
-  <updated>2020-10-23T21:13:05.427Z</updated>
+  <updated>2020-11-21T00:35:23.502Z</updated>
   <id>https://cwgavin.github.io/</id>
   
   <author>
@@ -17,16 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>COMPSCI 753 Notes</title>
-    <link href="https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-753-Notes/"/>
-    <id>https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-753-Notes/</id>
-    <published>2020-06-29T21:00:00.000Z</published>
-    <updated>2020-10-23T21:13:05.427Z</updated>
+    <title>COMPSCI 711 Notes</title>
+    <link href="https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-711-Notes/"/>
+    <id>https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-711-Notes/</id>
+    <published>2020-11-21T00:31:00.000Z</published>
+    <updated>2020-11-21T00:35:23.502Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>Course outline sorted out by myself for quick revision<br><i>University of Auckland COMPSCI 753 - Algorithms for Massive Data</i></p></blockquote><br/><h2 id="Data-Stream"><a href="#Data-Stream" class="headerlink" title="Data Stream"></a>Data Stream</h2><hr/><p><strong>Find similar items</strong></p><ul><li>Jaccard Similarity</li><li>Shingling -&gt; MinHash -&gt; LSH</li><li>MinHash<ul><li>Random permutations</li><li>One-pass MinHash<br/></li></ul></li></ul><p><strong>Sampling data stream</strong></p><ul><li>Fixed proportion</li><li>Fixed size<ul><li>Reservoir Sampling<br/></li></ul></li></ul><p><strong>Find frequent items</strong></p><ul><li>[Deterministic] Misra-Gries<ul><li><code>(m-m&#39;)/(k+1)</code> decrement steps at most</li></ul></li><li>[Randomized] CountMin Sketch<br/></li></ul><p><strong>Filtering data stream</strong></p><ul><li>Bloom Filter<ul><li>1 hash function</li><li>k hash functions<br/></li></ul></li></ul><p><strong>Locality Sensitive Search (LSH)</strong></p><ul><li><code>(r, c, p1, p2)</code>-sensitive</li><li>Jaccard similarity/distance<ul><li>MinHash</li></ul></li><li>Cosine similarity/distance<ul><li>SimHash</li></ul></li></ul><br/><h1 id="Graph"><a href="#Graph" class="headerlink" title="Graph"></a>Graph</h1><hr/><p><strong>Link Analysis</strong></p><ul><li>TF.IDF</li><li>Term Spam</li><li>PageRank<ul><li>Dead ends<ul><li>Recursively remove</li><li>Taxation</li></ul></li></ul></li><li>Biased PageRank</li><li>Link Spam (Spam Farm)<ul><li>Trust Rank</li><li>Spam Mass<br/></li></ul></li></ul><p><strong>Social Network Analysis</strong></p><ul><li>Small world property<ul><li>Power law degree distribution</li></ul></li><li>Core-Periphery structure</li><li>Strength of ties<ul><li>Triadic closure</li></ul></li><li>Clustering Coefficient<ul><li>Triangle enumeration</li></ul></li><li>Community Detection<ul><li>K-core decomposition</li></ul></li><li>Influence Maximization<ul><li>Greedy-based</li><li>Sketch-based<br/></li></ul></li></ul><p><strong>Join Analysis</strong></p><ul><li>Natural join</li><li>Semijoin</li><li>Multiway join</li><li>Acyclic join<ul><li>Yannakakis Algorithm</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>Revision notes for the final exam of<br><i>University of Auckland COMPSCI 711 - Parallel and Distributed Computing</i><br>(exported from OneNote)</p></blockquote><br/><object data="compsci-711.pdf" type="application/pdf" width="100%" height="820px">       <embed src="compsci-711.pdf">       <center>            This browser/device does not support PDFs.<br/>Please use a computer to view it.<br/><br/>            请用电脑打开该网页。        </center>       </embed></object> ]]></content>
     
     
-    <summary type="html">University of Auckland COMPSCI 753 - Algorithms for Massive Data</summary>
+    <summary type="html">University of Auckland COMPSCI 711 - Parallel and Distributed Computing</summary>
+    
+    
+    
+    
+    <category term="Notes" scheme="https://cwgavin.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>STATS 769 Notes</title>
+    <link href="https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-STATS-769-Notes/"/>
+    <id>https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-STATS-769-Notes/</id>
+    <published>2020-11-21T00:31:00.000Z</published>
+    <updated>2020-11-21T00:34:13.407Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Cheat sheet for the final exam (Restricted Book condition) of<br><i>University of Auckland STATS 769 - Advanced Data Science Practice</i></p></blockquote><br/><object data="769 cheat sheet.pdf" type="application/pdf" width="100%" height="820px">       <embed src="769 cheat sheet.pdf">       <center>            This browser/device does not support PDFs.<br/>Please use a computer to view it.<br/><br/>            请用电脑打开该网页。        </center>       </embed></object> ]]></content>
+    
+    
+    <summary type="html">University of Auckland STATS 769 - Advanced Data Science Practice</summary>
     
     
     
@@ -40,7 +59,7 @@
     <link href="https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-761-Notes/"/>
     <id>https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-761-Notes/</id>
     <published>2020-06-29T21:00:00.000Z</published>
-    <updated>2020-10-23T23:11:53.743Z</updated>
+    <updated>2020-10-23T23:41:46.260Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>Course outline sorted out by myself for quick revision<br><i>University of Auckland COMPSCI 761 - Artificial Intelligence</i></p></blockquote><br/><h2 id="Search"><a href="#Search" class="headerlink" title="Search"></a>Search</h2><hr/><p><strong>Problem</strong></p><ul><li>Problem Space<ul><li>states</li><li>actions</li></ul></li><li>Problem<ul><li>initial state</li><li>goal</li></ul></li><li>Problem Solving - search for a path in a graph</li><li>Problem Types<ul><li>Single-state problem<ul><li>Deterministic, fully observable  </li><li>Agent knows exactly which state it will be in; solution is a sequence </li></ul></li><li>Sensorless problem (conformant problem)<ul><li>Non-observable </li><li>Agent may have no idea where it is; solution (if any) is a sequence </li></ul></li><li>Contingency problem<ul><li>Nondeterministic and/or partially observable </li><li>Percepts provide new information about current state </li><li>Solution is a contingent plan or a policy </li><li>Often interleaves search &amp; execution </li></ul></li><li>Exploration problem (online problem) <ul><li>Unknown state space <br/></li></ul></li></ul></li></ul><p><strong>Uninformed Search</strong></p><ul><li>BFS</li><li>DFS</li><li>Iterative Deepening Search<br/></li></ul><p>Tree Search + Closed List = Graph Search<br><br/></p><p><strong>Informed Search</strong></p><ul><li>Best-First Search<ul><li>Greedy</li><li>A*</li><li>Iterative Deepening A*</li><li>Weighted A*</li></ul></li><li>Heuristics</li><li>Bidirectional Heuristic Search<ul><li>Front-to-back (e.g. MM, NBS, GBFHS)</li><li>Front-to-front</li><li>Perimeter Search<br/></li></ul></li></ul><p><strong>Local Search</strong></p><ul><li>Hill Climbing (best child)</li><li>Stochastic Hill Climbing<ul><li>First Choice</li><li>Random Walking</li><li>Random Restart</li></ul></li><li>Local Beam Search (k best children)<ul><li>Stochastic Beam Search</li><li>Genetic Algorithm</li></ul></li><li>Simulated Annealing<br/></li></ul><p><strong>Adversarial Search</strong></p><ul><li>Minimax<ul><li>Alpha-beta Pruning</li></ul></li><li>Expectimax</li><li>Look-ahead Tree</li><li>Monte-Carlo Tree Search<ul><li>Upper Confidence Bound<br/></li></ul></li></ul><p><strong>Planning</strong></p><ul><li>Languages: State, Goal, State Update</li><li>Predicates: positive/negative, fluent/static, primitive/derived, object level/meta level<br/></li></ul><p><strong>Constraint Satisfaction Problem (CSP)</strong></p><ul><li>Variables, domains, constraints</li><li>Backtracking Search (uninformed) - DFS for CSP</li><li>Heuristics (informed)</li><li>Constraint propagation<ul><li>Forward checking</li><li>Arc consistency</li></ul></li><li>Local Search for CSP<br/></li></ul><h2 id="Logic"><a href="#Logic" class="headerlink" title="Logic"></a>Logic</h2><hr/><ul><li>Entailment</li><li>Inference</li><li>Propositional Logic &nbsp; 命题逻辑</li><li>Horn Clause/Form &nbsp; 霍恩子句</li><li>Modus Ponens &nbsp; 肯定前件</li><li>Resolution &nbsp; 归结</li><li>Forward/Backward Chaining</li><li>First Order Logic</li><li>Unification</li><li>Generalized Modus Ponens</li></ul><p><img src="logic.png" width="450px"></img></p><br/><h2 id="Classic-AI"><a href="#Classic-AI" class="headerlink" title="Classic AI"></a>Classic AI</h2><hr/><ul><li>Expert System (KBS)</li><li>Knowledge Elicitation</li><li>Knowledge Engineering</li><li>Ontology<ul><li>Conceptual Graph</li><li>Knowledge Interchange Format (KIF)</li></ul></li><li>Case-Based Reasoning (CBR)</li></ul>]]></content>
     
@@ -55,11 +74,49 @@
   </entry>
   
   <entry>
+    <title>COMPSCI 753 Notes</title>
+    <link href="https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-753-Notes/"/>
+    <id>https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-753-Notes/</id>
+    <published>2020-06-29T21:00:00.000Z</published>
+    <updated>2020-10-23T23:41:46.257Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Course outline sorted out by myself for quick revision<br><i>University of Auckland COMPSCI 753 - Algorithms for Massive Data</i></p></blockquote><br/><h2 id="Data-Stream"><a href="#Data-Stream" class="headerlink" title="Data Stream"></a>Data Stream</h2><hr/><p><strong>Find similar items</strong></p><ul><li>Jaccard Similarity</li><li>Shingling -&gt; MinHash -&gt; LSH</li><li>MinHash<ul><li>Random permutations</li><li>One-pass MinHash<br/></li></ul></li></ul><p><strong>Sampling data stream</strong></p><ul><li>Fixed proportion</li><li>Fixed size<ul><li>Reservoir Sampling<br/></li></ul></li></ul><p><strong>Find frequent items</strong></p><ul><li>[Deterministic] Misra-Gries<ul><li><code>(m-m&#39;)/(k+1)</code> decrement steps at most</li></ul></li><li>[Randomized] CountMin Sketch<br/></li></ul><p><strong>Filtering data stream</strong></p><ul><li>Bloom Filter<ul><li>1 hash function</li><li>k hash functions<br/></li></ul></li></ul><p><strong>Locality Sensitive Search (LSH)</strong></p><ul><li><code>(r, c, p1, p2)</code>-sensitive</li><li>Jaccard similarity/distance<ul><li>MinHash</li></ul></li><li>Cosine similarity/distance<ul><li>SimHash</li></ul></li></ul><br/><h1 id="Graph"><a href="#Graph" class="headerlink" title="Graph"></a>Graph</h1><hr/><p><strong>Link Analysis</strong></p><ul><li>TF.IDF</li><li>Term Spam</li><li>PageRank<ul><li>Dead ends<ul><li>Recursively remove</li><li>Taxation</li></ul></li></ul></li><li>Biased PageRank</li><li>Link Spam (Spam Farm)<ul><li>Trust Rank</li><li>Spam Mass<br/></li></ul></li></ul><p><strong>Social Network Analysis</strong></p><ul><li>Small world property<ul><li>Power law degree distribution</li></ul></li><li>Core-Periphery structure</li><li>Strength of ties<ul><li>Triadic closure</li></ul></li><li>Clustering Coefficient<ul><li>Triangle enumeration</li></ul></li><li>Community Detection<ul><li>K-core decomposition</li></ul></li><li>Influence Maximization<ul><li>Greedy-based</li><li>Sketch-based<br/></li></ul></li></ul><p><strong>Join Analysis</strong></p><ul><li>Natural join</li><li>Semijoin</li><li>Multiway join</li><li>Acyclic join<ul><li>Yannakakis Algorithm</li></ul></li></ul>]]></content>
+    
+    
+    <summary type="html">University of Auckland COMPSCI 753 - Algorithms for Massive Data</summary>
+    
+    
+    
+    
+    <category term="Notes" scheme="https://cwgavin.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>COMPSCI 762 Notes</title>
+    <link href="https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-762-Notes/"/>
+    <id>https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-762-Notes/</id>
+    <published>2020-06-29T21:00:00.000Z</published>
+    <updated>2020-11-21T00:47:35.182Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Course outline sorted out by myself for quick revision<br><i>University of Auckland COMPSCI 762 - Advanced Machine Learning</i><br>(exported from OneNote)</p></blockquote><br/><object data="compsci-762.pdf" type="application/pdf" width="100%" height="820px">       <embed src="compsci-762.pdf">       <center>            This browser/device does not support PDFs.<br/>Please use a computer to view it.<br/><br/>            请用电脑打开该网页。        </center>       </embed></object> ]]></content>
+    
+    
+    <summary type="html">University of Auckland COMPSCI 762 - Advanced Machine Learning</summary>
+    
+    
+    
+    
+    <category term="Notes" scheme="https://cwgavin.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
     <title>STATS 707 Notes</title>
     <link href="https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-STATS-707-Notes/"/>
     <id>https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-STATS-707-Notes/</id>
     <published>2020-06-29T21:00:00.000Z</published>
-    <updated>2020-10-23T21:13:05.415Z</updated>
+    <updated>2020-10-23T23:41:46.261Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>Revision notes for the final exam of<br><i>University of Auckland STATS 707 - Computational Introduction to Statistics</i></p></blockquote><br/><img src="STATS 707 Notes-1.jpg" width="800px"><img src="STATS 707 Notes-2.jpg" width="800px"><img src="STATS 707 Notes-3.jpg" width="800px"><img src="STATS 707 Notes-4.jpg" width="800px">]]></content>
     
@@ -78,7 +135,7 @@
     <link href="https://cwgavin.github.io/posts/%E5%8C%97%E5%A4%A7%E5%85%AC%E5%BC%80%E8%AF%BE-%E5%8F%98%E6%80%81%E5%BF%83%E7%90%86%E5%AD%A6-%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0/"/>
     <id>https://cwgavin.github.io/posts/%E5%8C%97%E5%A4%A7%E5%85%AC%E5%BC%80%E8%AF%BE-%E5%8F%98%E6%80%81%E5%BF%83%E7%90%86%E5%AD%A6-%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0/</id>
     <published>2020-01-12T22:02:35.000Z</published>
-    <updated>2020-10-23T22:50:57.863Z</updated>
+    <updated>2020-10-23T23:41:46.254Z</updated>
     
     <content type="html"><![CDATA[<p>B 站上的北京大学公开课 <a href="https://www.bilibili.com/video/BV1ut411n7Bd">《变态心理学》</a>（Abnormal Psychology） 的手写笔记。</p><object data="变态心理学手写笔记.pdf" type="application/pdf" width="100%" height="820px">       <embed src="变态心理学手写笔记.pdf">       <center>            This browser/device does not support PDFs.<br/>Please use a computer to view it.<br/><br/>            请用电脑打开该网页。        </center>       </embed></object> ]]></content>
     
@@ -97,7 +154,7 @@
     <link href="https://cwgavin.github.io/posts/%E7%99%BD%E6%9D%BF%E6%8E%A8%E5%AF%BC-%E9%A2%91%E7%8E%87%E6%B4%BE-vs-%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%B4%BE/"/>
     <id>https://cwgavin.github.io/posts/%E7%99%BD%E6%9D%BF%E6%8E%A8%E5%AF%BC-%E9%A2%91%E7%8E%87%E6%B4%BE-vs-%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%B4%BE/</id>
     <published>2019-12-15T20:37:00.000Z</published>
-    <updated>2020-10-23T21:13:05.428Z</updated>
+    <updated>2020-10-23T23:41:46.267Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p><a href="https://www.bilibili.com/video/BV1aE411o7qd?p=2">B站白板推导系列视频之一</a> 的笔记，便于快速回顾基础知识。</p></blockquote><img src="频率派.png" width="800px"><img src="贝叶斯派.png" width="750px"><!-- <object data="STATS707.pdf" type="application/pdf" width="100%" height="1000px">       <embed src="STATS707.pdf">       <center>           This browser does not support PDFs.<br/>Please download the PDF to view it or open this page on a computer.<br/>           <a href="STATS707.pdf">Download PDF</a>        </center>       </embed></object> -->]]></content>
     
@@ -116,7 +173,7 @@
     <link href="https://cwgavin.github.io/posts/An-Overview-of-Web-Storage-Options/"/>
     <id>https://cwgavin.github.io/posts/An-Overview-of-Web-Storage-Options/</id>
     <published>2019-05-03T21:20:47.000Z</published>
-    <updated>2020-10-23T21:13:05.389Z</updated>
+    <updated>2020-10-23T23:41:46.252Z</updated>
     
     <content type="html"><![CDATA[<img src="web-storage-options.png" width="200px"><p>⚠️ Web SQL and Application Cache are deprecated.<br><br/></p><p><strong>Modern Storage APIs:</strong></p><ul><li>Web Storage API<ul><li>A mechanism by which browsers can securely store key/value pairs.</li><li>Local Storage<ul><li>Provides a permanent storage.</li><li>Basic usage:<ul><li><code>localStorage.setItem(&#39;key&#39;, &#39;value&#39;);</code></li><li><code>localStorage.getItem(&#39;key&#39;);</code></li></ul></li></ul></li><li>Session Storage<ul><li>Maintains data on page sessions. Opening a page in a new tab or window will initiate a new page session, hence having different Session Storage instances for the same site. The page session survives over page reloads and restores until you close the browser. </li><li>Basic usage:<ul><li><code>sessionStorage.setItem(&#39;key&#39;, &#39;value&#39;);</code></li><li><code>sessionStorage.getItem(&#39;key&#39;);</code></li></ul></li></ul></li></ul></li><li>IndexedDB<ul><li>A low-level API for client-side storage of significant amounts of structured data, including files/blobs. <br/></li></ul></li></ul><hr><p><strong>Other Options:</strong></p><ul><li><p>Cookies</p><ul><li><p>A small piece of data from server and sent back to server with every request from client, typically used to identify if two requests came from the same browser. It’s a stateful solution on stateless HTTP protocol. </p></li><li><p>Session Cookies</p><ul><li>Expires when you close the browser.</li></ul></li><li><p>Permanent Cookies</p><ul><li>Expires at a specific date (<code>Expires</code>) or after a specific length of time (<code>Max-Age</code>)</li></ul></li><li><p>Basic usage:</p><ul><li><p><code>Set-Cookie: &lt;name&gt;=&lt;value&gt;</code> in response header: </p><pre><code>HTTP/2.0 200 OKContent-type: text/htmlSet-Cookie: sessionid=c270e9a6Set-Cookie: csrftoken=juILC73NMNnGq[page content]</code></pre></li><li><p>Now every new request sent from client will include a <code>Cookie</code> header:</p><pre><code>GET /sample_page.html HTTP/2.0Host: www.example.orgCookie: sessionid=a270e9a6; csrftoken=juILC73NMNnGq</code></pre></li></ul></li></ul></li><li><p>Cache API</p><ul><li>A system for storing and retrieving network requests and corresponding responses. It was created to enable Service Workers to cache network requests in order to provide appropriate responses while offline. However, it can also be used for storage purposes as it can save blobs, jsons, form data objects, and etc as <code>Response</code> objects. </li><li>Basic usage:<ul><li>Feature Detection: <code>const cacheAvailable = &#39;caches&#39; in self;</code><br/></li></ul></li></ul></li></ul><hr><p><strong>Side Note:</strong></p><ul><li>Service Worker<ul><li>A proxy that sits between web applications, the browser, and the network (when available). In order to create an effective offline experiences, they intercept network requests, cache responses, push notification and do background syncs. </li><li>Runs in a worker context, non-blocking, no DOM access. </li></ul></li></ul>]]></content>
     
@@ -135,9 +192,9 @@
     <link href="https://cwgavin.github.io/posts/%E6%97%A5%E8%AF%91-%E4%BB%A4%E5%92%8C%E4%BC%8A%E5%A7%8B%E7%9A%84%E5%96%A7%E5%9A%A3%E4%B8%8E%E8%82%83%E9%9D%99/"/>
     <id>https://cwgavin.github.io/posts/%E6%97%A5%E8%AF%91-%E4%BB%A4%E5%92%8C%E4%BC%8A%E5%A7%8B%E7%9A%84%E5%96%A7%E5%9A%A3%E4%B8%8E%E8%82%83%E9%9D%99/</id>
     <published>2019-05-03T09:16:29.000Z</published>
-    <updated>2020-10-23T21:13:05.425Z</updated>
+    <updated>2020-11-21T00:56:30.388Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>注：这是我在推特上刷到的一篇 NHK 的报道，描述了日本在 5 月 1 日，年号正式从“平成”变为“令和”这天，普通人究竟是如何度过的。觉得很有意思，于是试着翻译了一下。图片就不搬运了，可以进原文查看。</p></blockquote><p>原文：<a href="https://www3.nhk.or.jp/news/html/20190501/k10011903391000.html">https://www3.nhk.or.jp/news/html/20190501/k10011903391000.html</a><br>翻译：辛眉</p><br/><p>令和，开始了。各地都有许多人以倒计时的方式来迎接新的一年，热闹非凡。而另一边，走在街道上会发现不论年号变不变，日子仍旧在继续，网络上也有“我与往常一样”、“正常运转”等言论。喧嚣与肃静，在这一天并行不悖。</p><br/><h2 id="一片喧闹"><a href="#一片喧闹" class="headerlink" title="一片喧闹"></a>一片喧闹</h2><p>“10、9、8、7 …… 3、2、1！”</p><p>随着年号变更那一时刻的到来，东京、札幌、松山都进行了倒计时。在那瞬间，拥挤到身体根本动弹不得。还有在飞机上从日本南阿尔卑斯山（赤石山脉）的上空眺望令和第一个日出的活动，就像迎接新年的心情一样漂浮于空中。从昭和变为平成时未曾有过的令人耳目一新的年号伊始，乍看之下沉浸在一片庆祝的氛围之中。</p><br/><h2 id="地球与银河都正常运转"><a href="#地球与银河都正常运转" class="headerlink" title="地球与银河都正常运转"></a>地球与银河都正常运转</h2><p>而在网络上面，尽管庆祝的推文数不胜数，却也有一些不太一样的声音。</p><blockquote><p>“大家都在说着 10 连休、令和，而我还在一如既往地工作。”</p><p>“仔细想想，年号、正月、圣诞等等都是人定的，和别的日子没有两样。地球也好银河也好，都正常运转。”</p><p>“因为令和来了，所以立刻就能改变，是不可能的事情！创造新时代的是我们，所以像平常一样放松就好啦。”</p></blockquote><p>这些推文说的都是虽然年号变了，感觉也变得不一样了，但自己还是淡淡地过着日常生活，没有什么变化。</p><br/><h2 id="普通的-5-月-1-日"><a href="#普通的-5-月-1-日" class="headerlink" title="普通的 5 月 1 日"></a>普通的 5 月 1 日</h2><p>实际上到底如何呢？我们去东京的商店街走访了一趟。</p><p>中野区的“東中野名店会”，约一公里的距离内有许多店铺。由于 10 连休，大多数店铺都拉下了卷帘，街道十分安静。</p><p>在这中间也有正常营业的店铺。这家店已有些许褪色的屋檐上写着“花のよしはし”（花之吉桥）。店门前摆着粉色和橘色的花，站在这些色彩鲜艳的花中间的就是花店的店主，吉橋正巳先生。</p><p>“都说时代变了，时代变了，各种各样的庆祝活动漫天飞舞，对我来说却只是普通的 5 月 1 日。”</p><p>“毕竟花市在黄金周也是要开的啊。”</p><br/><h2 id="比起特殊的日子，更希望延续日常"><a href="#比起特殊的日子，更希望延续日常" class="headerlink" title="比起特殊的日子，更希望延续日常"></a>比起特殊的日子，更希望延续日常</h2><p>吉橋先生在昭和 31 年（1956年），出生于埼玉县的一个花农家，是家里的次男。</p><p>“农家是长男继承，所以我高中毕业后做了 5 年的工薪族。”</p><p>“但我果然还是对花情有独钟。20 多岁的时候为了开花店而去培训。”</p><p>然后在平成 8 年（1996 年），39 岁的他在这条商店街开店。当时商店街有三家花店，而今只剩花之吉桥这一家。</p><p>“附近的超市也开始卖花了，个人的小店越来越难经营了。”</p><p>走出这家店时，他告诉我们节假日的商店街原本是有大量人流往来，热闹无比的行人天堂，现在却再也没有以往那么多的人流，店铺也一家家倒闭。认为自己是得到大家的支持才做出一点成绩的吉橋先生，考虑在自己这一代关掉这家店。</p><p>在令和的第一天，今天，我们聊的是这样的事情。</p><p>“昨天今天都已无法改变。看不到新时代的前面会有什么，所以也无法知道明天会如何。只希望还能够继续和平的时代就好了。”</p><p>一如既往地经营着花店的吉橋先生，比起特殊的日子，更希望现在的日常可以长久地延续下去。</p><p>“除了年头年尾，我每两天去一次集市，把花卖给当地人。”</p><p>在严峻的现实中过着这样的日子。</p><br/><h2 id="今天也一样"><a href="#今天也一样" class="headerlink" title="今天也一样"></a>今天也一样</h2><p>改元的第一天，同时也是大型连休的第一天，一个对无家可归者进行援助活动的 NPO 在东京池袋的公园里开设了流动厨房，大约有 130 人为了有一口饭吃而排队。</p><p>在生活咨询（生活相談）中，曾经是派遣社员的 40 多岁的男性说：“失业了，想着什么样的工作都可以，结果却怎么也找不到工作。” 第一次来流动厨房的男性说：“丢了工作，又被公司宿舍赶出来。没有地方住了。”</p><p>以前来流动厨房的人多半是高龄者，现在却常常能看到许多四五十岁的身影。在令和初始的今天，该 NPO 与往常一样在池袋站的周边举行援助活动，分发饭团等食物。</p><p>“我每天都来 ‘今天没有寄身之所’ 咨询会。即便年号变了，这也不会改变。要想帮他们挣脱困境，就必须每天都持续支援。”</p><p>—— NPO 法人 TENOHASI 代表理事 清野賢司</p><br/><h2 id="不会自然而然地来"><a href="#不会自然而然地来" class="headerlink" title="不会自然而然地来"></a>不会自然而然地来</h2><p>虽然年号变了，有了新的感觉，但要把平成遗留下的问题一夜之间解决掉是不可能的。很多人只是平静地、淡淡地迎接今天，面对着各自的生活，努力地过着毫无变化的一天。</p><p>比今天更加美好的时代，不会在某一次转变中自然而然地到来，而是从今往后由我们自己创造出来的。</p><blockquote><p><strong>“创造新时代的是我们”</strong></p></blockquote><p>令和第一天的大清早，我想在今天好好地咀嚼网上的这句话。</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>注：这是我在推特上刷到的一篇 NHK 的报道，描述了日本在 5 月 1 日，年号正式从“平成”变为“令和”这天，普通人究竟是如何度过的。觉得很有意思，于是试着翻译了一下。图片就不搬运了，可以进原文查看。</p></blockquote><p>原文：<a href="http://www.nhk.or.jp/seikatsu-blog/800/406158.html">http://www.nhk.or.jp/seikatsu-blog/800/406158.html</a><br>翻译：辛眉</p><br/><p>令和，开始了。各地都有许多人以倒计时的方式来迎接新的一年，热闹非凡。而另一边，走在街道上会发现不论年号变不变，日子仍旧在继续，网络上也有“我与往常一样”、“正常运转”等言论。喧嚣与肃静，在这一天并行不悖。</p><br/><h2 id="一片喧闹"><a href="#一片喧闹" class="headerlink" title="一片喧闹"></a>一片喧闹</h2><p>“10、9、8、7 …… 3、2、1！”</p><p>随着年号变更那一时刻的到来，东京、札幌、松山都进行了倒计时。在那瞬间，拥挤到身体根本动弹不得。还有在飞机上从日本南阿尔卑斯山（赤石山脉）的上空眺望令和第一个日出的活动，就像迎接新年的心情一样漂浮于空中。从昭和变为平成时未曾有过的令人耳目一新的年号伊始，乍看之下沉浸在一片庆祝的氛围之中。</p><br/><h2 id="地球与银河都正常运转"><a href="#地球与银河都正常运转" class="headerlink" title="地球与银河都正常运转"></a>地球与银河都正常运转</h2><p>而在网络上面，尽管庆祝的推文数不胜数，却也有一些不太一样的声音。</p><blockquote><p>“大家都在说着 10 连休、令和，而我还在一如既往地工作。”</p><p>“仔细想想，年号、正月、圣诞等等都是人定的，和别的日子没有两样。地球也好银河也好，都正常运转。”</p><p>“因为令和来了，所以立刻就能改变，是不可能的事情！创造新时代的是我们，所以像平常一样放松就好啦。”</p></blockquote><p>这些推文说的都是虽然年号变了，感觉也变得不一样了，但自己还是淡淡地过着日常生活，没有什么变化。</p><br/><h2 id="普通的-5-月-1-日"><a href="#普通的-5-月-1-日" class="headerlink" title="普通的 5 月 1 日"></a>普通的 5 月 1 日</h2><p>实际上到底如何呢？我们去东京的商店街走访了一趟。</p><p>中野区的“東中野名店会”，约一公里的距离内有许多店铺。由于 10 连休，大多数店铺都拉下了卷帘，街道十分安静。</p><p>在这中间也有正常营业的店铺。这家店已有些许褪色的屋檐上写着“花のよしはし”（花之吉桥）。店门前摆着粉色和橘色的花，站在这些色彩鲜艳的花中间的就是花店的店主，吉橋正巳先生。</p><p>“都说时代变了，时代变了，各种各样的庆祝活动漫天飞舞，对我来说却只是普通的 5 月 1 日。”</p><p>“毕竟花市在黄金周也是要开的啊。”</p><br/><h2 id="比起特殊的日子，更希望延续日常"><a href="#比起特殊的日子，更希望延续日常" class="headerlink" title="比起特殊的日子，更希望延续日常"></a>比起特殊的日子，更希望延续日常</h2><p>吉橋先生在昭和 31 年（1956年），出生于埼玉县的一个花农家，是家里的次男。</p><p>“农家是长男继承，所以我高中毕业后做了 5 年的工薪族。”</p><p>“但我果然还是对花情有独钟。20 多岁的时候为了开花店而去培训。”</p><p>然后在平成 8 年（1996 年），39 岁的他在这条商店街开店。当时商店街有三家花店，而今只剩花之吉桥这一家。</p><p>“附近的超市也开始卖花了，个人的小店越来越难经营了。”</p><p>走出这家店时，他告诉我们节假日的商店街原本是有大量人流往来，热闹无比的行人天堂，现在却再也没有以往那么多的人流，店铺也一家家倒闭。认为自己是得到大家的支持才做出一点成绩的吉橋先生，考虑在自己这一代关掉这家店。</p><p>在令和的第一天，今天，我们聊的是这样的事情。</p><p>“昨天今天都已无法改变。看不到新时代的前面会有什么，所以也无法知道明天会如何。只希望还能够继续和平的时代就好了。”</p><p>一如既往地经营着花店的吉橋先生，比起特殊的日子，更希望现在的日常可以长久地延续下去。</p><p>“除了年头年尾，我每两天去一次集市，把花卖给当地人。”</p><p>在严峻的现实中过着这样的日子。</p><br/><h2 id="今天也一样"><a href="#今天也一样" class="headerlink" title="今天也一样"></a>今天也一样</h2><p>改元的第一天，同时也是大型连休的第一天，一个对无家可归者进行援助活动的 NPO 在东京池袋的公园里开设了流动厨房，大约有 130 人为了有一口饭吃而排队。</p><p>在生活咨询（生活相談）中，曾经是派遣社员的 40 多岁的男性说：“失业了，想着什么样的工作都可以，结果却怎么也找不到工作。” 第一次来流动厨房的男性说：“丢了工作，又被公司宿舍赶出来。没有地方住了。”</p><p>以前来流动厨房的人多半是高龄者，现在却常常能看到许多四五十岁的身影。在令和初始的今天，该 NPO 与往常一样在池袋站的周边举行援助活动，分发饭团等食物。</p><p>“我每天都来 ‘今天没有寄身之所’ 咨询会。即便年号变了，这也不会改变。要想帮他们挣脱困境，就必须每天都持续支援。”</p><p>—— NPO 法人 TENOHASI 代表理事 清野賢司</p><br/><h2 id="不会自然而然地来"><a href="#不会自然而然地来" class="headerlink" title="不会自然而然地来"></a>不会自然而然地来</h2><p>虽然年号变了，有了新的感觉，但要把平成遗留下的问题一夜之间解决掉是不可能的。很多人只是平静地、淡淡地迎接今天，面对着各自的生活，努力地过着毫无变化的一天。</p><p>比今天更加美好的时代，不会在某一次转变中自然而然地到来，而是从今往后由我们自己创造出来的。</p><blockquote><p><strong>“创造新时代的是我们”</strong></p></blockquote><p>令和第一天的大清早，我想在今天好好地咀嚼网上的这句话。</p>]]></content>
     
     
     <summary type="html">如人饮水，冷暖自知。</summary>
@@ -156,7 +213,7 @@
     <link href="https://cwgavin.github.io/posts/%E8%8B%B1%E8%AF%91-%E7%94%A8-local-storage-%E8%B7%A8%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%81%E4%BF%A1%E6%81%AF/"/>
     <id>https://cwgavin.github.io/posts/%E8%8B%B1%E8%AF%91-%E7%94%A8-local-storage-%E8%B7%A8%E9%A1%B5%E9%9D%A2%E4%BC%A0%E9%80%81%E4%BF%A1%E6%81%AF/</id>
     <published>2019-04-30T10:19:13.000Z</published>
-    <updated>2020-10-23T21:13:05.432Z</updated>
+    <updated>2020-10-23T23:41:46.268Z</updated>
     
     <content type="html"><![CDATA[<p>原文：<a href="https://ponyfoo.com/articles/cross-tab-communication">https://ponyfoo.com/articles/cross-tab-communication</a><br>翻译：辛眉</p><br/><blockquote><p><a href="https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker">SharedWorker</a> API 允许我们在不同的 iframe，甚至不同的浏览器标签页和窗口之间传输信息。它在 Chrome，Firefox 上都能运行，但不被 Safari 支持。然而有一个被广泛支持的方法却不为人知，让我们来看看吧！</p></blockquote><p>我想用一种优雅的方法解决以下问题：假设有个人访问了你的网站，登录，打开另一个标签页，然后在那个标签页登出。这时他在第一个标签页仍然是“已登录”的状态，而他点击的所有东西都会重定向到登录页面，或者直接崩掉。一个更好的做法是我们能够知道他在第二个标签页已经登出了，然后显示一个对话框让他重新登录，或者直接显示登录框。</p><p>你可以用 WebSocket API 来做，但是杀鸡焉用宰牛刀呢。我想通过更低级的技术来实现，所以我找了很多跨页面通讯的选项。我找到的第一个选项是用 cookies 或者 <code>localStorage</code>，然后用 <code>setInterval</code> 周期性检查用户是否还在登录状态。我不太满意这个答案，因为反复检查一个可能根本不会发生的事件实在太耗费 CPU 了。如果这样我宁可使用 Comet （一种维持与服务器端的连接并获取实时推送的技术，包括长轮询 long polling 和 iframe 流），Server-sent events 或者 WebSocket。</p><p>然而我被骗了，事实上单靠 <code>localStorage</code> 就能搞定。</p><p>你知道 <code>localStorage</code> 会触发事件吗？具体来说，当你进行添加、修改、删除的时候，就会在其他的浏览环境（browsing context）中触发一个事件。也就是说，当你在某个标签页上改动了 <code>localStorage</code>，其他标签页都能通过监听 <code>window</code> 上的 <code>storage</code> 事件来得知这一切：</p><pre><code class="javascript">window.addEventListener(&#39;storage&#39;, function (event) &#123;  console.log(event.key, event.newValue);&#125;);</code></pre><p><code>event</code> 对象包含以下相关属性：</p><table><thead><tr><th>Property</th><th>Description</th></tr></thead><tbody><tr><td><code>key</code></td><td>The affected key in <code>localStorage</code></td></tr><tr><td><code>newValue</code></td><td>The value that is currently assigned to that key</td></tr><tr><td><code>oldValue</code></td><td>The value before modification</td></tr><tr><td><code>url</code></td><td>The URL of the page where the change occurred</td></tr><tr><td><br/></td><td></td></tr></tbody></table><p>当你在某个页面上修改 <code>localStorage</code> 时，会在除了该页面以外的其他所有标签页触发事件，这意味着我们可以通过它来跨页面传递信息。</p><pre><code class="javascript">var loggedOn;// TODO: call when logged-in user changes or logs outlogonChanged();window.addEventListener(&#39;storage&#39;, updateLogon);window.addEventListener(&#39;focus&#39;, checkLogon);function getUsernameOrNull () &#123;  // TODO: return whether the user is logged on&#125;// 用户在该页面登录时，将登录状态记录进 localStoragefunction logonChanged () &#123;  var uname = getUsernameOrNull();  loggedOn = uname;  localStorage.setItem(&#39;logged-on&#39;, uname);&#125;// 用户在其他标签页登出时，捕获事件并更新登录状态function updateLogon (event) &#123;  if (event.key === &#39;logged-on&#39;) &#123;    loggedOn = event.newValue;  &#125;&#125;// 检查登录状态，若未登录则重新加载页面function checkLogon () &#123;  var uname = getUsernameOrNull();  if (uname !== loggedOn) &#123;    location.reload();  &#125;&#125;</code></pre><p>当用户打开两个标签页，在其中一个登出，再回到另一个标签页，页面会重新加载，然后服务端逻辑会把用户带到其他页面。注意这里我们只在标签页被聚焦（focus）的情况下才检查登录状态，因为用户有可能在登出之后立刻再次登录，这种情况下我们不想把他们从所有标签页都登出。</p><p>我们当然还可以改进这段代码，但它已经满足要求了。一个更好的实现可能是要求他们立刻登录，但注意这段代码还可以反过来：当他们登录后回到之前登出的标签页时，重新加载会让他们直接回到已登录状态。</p><p>（译者注：接下来作者介绍了他自己做的一个 npm module，简化了 <code>localStorage</code> 的语法，并提升了兼容性。但在实际工作中，由于私人维护的包往往有很多不确定性甚至安全隐患，因此需要谨慎对待。因而略过不译。）</p>]]></content>
     
@@ -179,7 +236,7 @@
     <link href="https://cwgavin.github.io/posts/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E5%85%A8%E8%AE%B0%E5%BD%95/"/>
     <id>https://cwgavin.github.io/posts/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E5%85%A8%E8%AE%B0%E5%BD%95/</id>
     <published>2019-04-13T03:00:25.000Z</published>
-    <updated>2020-10-23T21:13:05.403Z</updated>
+    <updated>2020-10-23T23:41:46.252Z</updated>
     
     <content type="html"><![CDATA[<p>之前用 Jekyll + GitHub Pages 做过一个个人博客，大概类似于 <a href="https://onevcat.com/">https://onevcat.com/</a> 这种风格的，打开先是一个封面，然后通过下面的链接转向不同地方。但由于我一直对这个主题有一些不太满意的地方，再加上荒废了一年时间没有写过一篇博客，所以现在决定用 Hexo 重新做一次。为什么改用 Hexo？很简单，因为印象中 Jekyll 用起来有点麻烦。博客毕竟只是记录生活感想或者学习笔记的工具，如果花费过多的时间在工具本身，我觉得就有点本末倒置了。</p><blockquote><p>⚠️ 注意：本文假设 GitHub Pages 已经设置完毕，不了解的同学可以看<a href="https://pages.github.com/">官网</a>的详细指导。</p></blockquote><h1 id="首先，为什么要写博客？"><a href="#首先，为什么要写博客？" class="headerlink" title="首先，为什么要写博客？"></a>首先，为什么要写博客？</h1><p>这个问题我还没想好，等我开始写了再回答（笑）。</p><h1 id="选主题"><a href="#选主题" class="headerlink" title="选主题"></a>选主题</h1><p>搭建这种简易博客的第一件事大概就是选主题了。我在 Hexo 上浏览了一番，看到了这个主题：</p><img src="活版印字.png" width="500px"><p>活版印字？示例文章好像还放了朱自清的《背影》和夏目漱石的《我是猫》，嗯，看上去好像不错的样子。于是我点开了它——</p><img src="Screen Shot 2019-04-13 at 6.59.37 PM.png" width="500px"><img src="why.jpg" width="70px"> <p>图文不符啊亲？</p><p>……不过还是很好看啊，算了就决定是你了。</p><h1 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h1><p>按照 <a href="https://hexo.io/">Hexo 官网</a> 上的代码安装并初始化了一个博客网站，在本地运行了一下，不错。虽然默认主题不是很好看，但我们可以稍后修改，现在先将这个初始化的结果 commit 到 GitHub 吧。</p><p>然而 Hexo 立刻就给了刚见面的我一个下马威 :)  GitHub 发来一封<code>Page build failure</code>邮件：</p><pre><code>The tag `fancybox` on line 77 in `themes/landscape/README.md` is not a recognized Liquid tag.</code></pre><p>在 google 一番之后发现原因很简单，Hexo 在默认主题的 README 中使用了一个不受支持的 tag，只要把出问题的这一行注释掉，或者索性把 README 删掉就没问题了。接下来安装我中意的主题，主题作者在<a href="https://github.com/SumiMakito/hexo-theme-Journal">这里</a>有安装指导。然后我们再 commit：</p><pre><code>The page build completed successfully, but returned the following warning for the `master` branch:You are attempting to use a Jekyll theme, &quot;journal&quot;, which is not supported by GitHub Pages.</code></pre><p>都说真男人从不回头看爆炸，真程序员从不回头看 warning，既然 build completed successfully，那么这种区区小 warning 我也是不想去管他的。</p><img src="404.png" width="500px"><p>404警告</p><p>……好吧，我们老老实实去解决这个 warning，否则网站打不开。我找到了一个 GitHub Issue，给出的解决方法是 lock Hexo version to 3.3.1，我试了一下没有作用。接着我找到了这篇文章：<a href="https://liguanghe.github.io/2017/11/06/blogRebuilt/">hexo 博客的神坑及本质原因</a> ，这篇神一般的文章奇迹般地拯救了我可能要浪费的大把时间和脆弱又宝贵的自信心。在这篇文章的指导下我发现我的博客此时已经陷入死胡同，挽救不回来了（……）。好的，那让我们删除掉刚刚做好的所有东西，重新开始吧 ( ´▽｀)</p><p>在这篇神文的指导下我很快就把博客搭建好了，但在进行个性化设置的时候还是碰到了一些问题。</p><h1 id="添加标签页"><a href="#添加标签页" class="headerlink" title="添加标签页"></a>添加标签页</h1><p>首先，给 Hexo 站点添加一个页面的 command：</p><pre><code>hexo new page &lt;页面名称&gt;</code></pre><p>要在命令行运行。不知道什么是/怎么用命令行工具的同学请出门右转参加 WordPress 建站讨论组（不是）。</p><p>新建 tags 页面之后，网上普遍的说法是只要你在 Hexo 自动生成的 index.md 中添加以下设置就可以了：</p><pre><code>---title: Tagstype: &quot;tags&quot;---</code></pre><p>我照做了，然而得到的却是一个空白的 Tags 页面。直到我看到了<a href="https://www.zhihu.com/question/29017171/answer/364705653">这个回答</a>…… 因为我安装的这个主题，它对应标签页的 ejs 文件不叫<code>tags.ejs</code>，而是<code>tag-index.ejs</code>。所以，划重点：添加<code>layout: &quot;tag-index&quot;</code>，就大功告成了。</p><h1 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h1><p>Markdown 格式天生不支持图片的上传和保存，虽然我们有办法引用图片，却不知道应该把图片存储在哪里。有两种解决方式：1. 将文章的所有图片都保存在一个文件夹中，与文字和项目代码一起上传到 GitHub；2. 把图片上传到一个免费图床上，再在文章中引用图片网址。</p><p>1 的优点在于图片掌握在自己手中，不会莫名其妙丢失。缺点是如果想把文章移植到别的地方，那么图片的搬运会是一项十分头疼的工作。2 的优点是利于文章直接复制粘贴到其他平台，缺点是一些免费图床不是很靠谱，有突然崩掉的可能性。如果你没有本地备份，那么有可能有些图片你是再也找不回来了。</p><h1 id="对了，看了半天我还不知道……"><a href="#对了，看了半天我还不知道……" class="headerlink" title="对了，看了半天我还不知道……"></a>对了，看了半天我还不知道……</h1><p>嗯好的没问题，对于看完了这篇文章还不知道 Hexo 这个词到底要怎么念的同学，跟我念：黑克搜。</p>]]></content>
     
@@ -198,7 +255,7 @@
     <link href="https://cwgavin.github.io/posts/hello-world/"/>
     <id>https://cwgavin.github.io/posts/hello-world/</id>
     <published>2018-12-31T11:00:00.000Z</published>
-    <updated>2020-10-23T21:13:05.394Z</updated>
+    <updated>2020-10-23T23:41:46.252Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>]]></content>
     
