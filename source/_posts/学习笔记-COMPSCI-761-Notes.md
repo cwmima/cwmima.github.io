@@ -9,6 +9,8 @@ tags: Notes
 > Course outline sorted out by myself for quick revision
 > <i>University of Auckland COMPSCI 761 - Artificial Intelligence</i>
 
+> BTW: I got the <b>First in Course Award</b> in this course. XD
+
 <br/>
 
 ## Search
