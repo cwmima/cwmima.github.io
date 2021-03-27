@@ -6,7 +6,7 @@
   <link href="https://cwgavin.github.io/atom.xml" rel="self"/>
   
   <link href="https://cwgavin.github.io/"/>
-  <updated>2020-11-21T00:35:23.502Z</updated>
+  <updated>2021-03-27T00:20:08.164Z</updated>
   <id>https://cwgavin.github.io/</id>
   
   <author>
@@ -17,16 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>COMPSCI 711 Notes</title>
-    <link href="https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-711-Notes/"/>
-    <id>https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-711-Notes/</id>
-    <published>2020-11-21T00:31:00.000Z</published>
-    <updated>2020-11-21T00:35:23.502Z</updated>
+    <title>[时间轴] 中国与日本，鲁迅与藤野先生</title>
+    <link href="https://cwgavin.github.io/posts/%E6%97%B6%E9%97%B4%E8%BD%B4-%E9%B2%81%E8%BF%85%E4%B8%8E%E8%97%A4%E9%87%8E%E5%85%88%E7%94%9F/"/>
+    <id>https://cwgavin.github.io/posts/%E6%97%B6%E9%97%B4%E8%BD%B4-%E9%B2%81%E8%BF%85%E4%B8%8E%E8%97%A4%E9%87%8E%E5%85%88%E7%94%9F/</id>
+    <published>2021-03-26T06:13:00.000Z</published>
+    <updated>2021-03-27T00:20:08.164Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>Revision notes for the final exam of<br><i>University of Auckland COMPSCI 711 - Parallel and Distributed Computing</i><br>(exported from OneNote)</p></blockquote><br/><object data="compsci-711.pdf" type="application/pdf" width="100%" height="820px">       <embed src="compsci-711.pdf">       <center>            This browser/device does not support PDFs.<br/>Please use a computer to view it.<br/><br/>            请用电脑打开该网页。        </center>       </embed></object> ]]></content>
+    <content type="html"><![CDATA[<blockquote><p>两个人，两个国家，四条线索在一段混乱的历史中交错穿插。<br>印象中在杂志上看到过藤野先生的《谨忆周树人君》，再次搜索时偶然发现藤野先生逝世的时间就在日本投降之前，觉得很巧合，又很感慨。于是根据网络上的一些资料自己整理出了这份时间轴，希望能把鲁迅与藤野先生的故事放到当时的历史背景中去理解。</p></blockquote><table>    <tr>        <td style="width:130px;"><b>时间</b></td>        <td><b>事件</b></td>    </tr>    <tr>        <td>1874年7月1日</td>        <td>藤野严九郎（藤野先生）出生于日本敦贺县（后并入福井县）。</td>    </tr>    <tr>        <td>1881年9月25日</td>        <td>鲁迅出生于浙江绍兴。</td>    </tr>    <tr>        <td>1894年</td>        <td>中日甲午战争，北洋水师全军覆没。此时鲁迅 13 岁，成天为病重的父亲出入当铺和药店，遭人冷眼。藤野 20 岁，尚在爱知县立医学校（今名古屋大学医学部）学习。</td>    </tr>    <tr>        <td>1895年4月17日</td>        <td>《马关条约》签订。</td>    </tr>    <tr>        <td>1902年</td>        <td>藤野严九郎入职仙台医学专门学校。他因出身院校不好，薪水很低，又因北陆口音重和改分严格，受到一些学生的轻视和不满。</td>    </tr>    <tr>        <td>1904年2月</td>        <td>日俄战争爆发。</td>    </tr>    <tr>        <td>1904年9月</td>        <td>鲁迅进入仙台医专学习。藤野对学生的课堂笔记认真批改，对鲁迅也一视同仁。在后来的《谨忆周树人君》中，藤野说 “不幸的是那时社会上还有日本人把中国人骂为 ‘梳辫子和尚’，说中国人坏话的风气。…… 我很尊敬中国的先贤，同时也感到要爱惜来自这个国家的人们。这大概就是我让周君感到特别亲切、特别感激的缘故吧。”</td>    </tr>     <tr>        <td>1905年9月</td>        <td>日俄战争结束。日本取得胜利。</td>    </tr>    <tr>        <td>1906年1月</td>        <td>鲁迅在课间看“日俄战争教育片”，看到 “偏有中国人夹在里边：给俄国人做侦探，被日本军捕获，要枪毙了，围着看的也是一群中国人”，深受刺激，决定弃医从文。</td>    </tr>    <tr>        <td>1906年3月</td>        <td>鲁迅从仙台医专退学，临走前到藤野家辞行。</td>    </tr>    <tr>        <td>1909年8月</td>        <td>鲁迅归国。</td>    </tr>    <tr>        <td>1912年</td>        <td>中华民国成立。</td>    </tr>    <tr>        <td>1915年</td>        <td>仙台医专升格为东北帝国大学医学部，藤野严九郎因既无帝大学位也无留洋经历而被东北帝大解聘，后辗转回乡行医，逐渐成为一名在当地颇受敬仰的乡村医生，直至离世。</td>    </tr>    <tr>        <td>1918年5月</td>        <td>鲁迅首次以“鲁迅”为笔名在《新青年》第四卷第五号发表白话短篇小说《狂人日记》。</td>    </tr>    <tr>        <td>1926年12月</td>        <td>鲁迅在《莽原》半月刊上发表《藤野先生》，后收入《朝花夕拾》。</td>    </tr>    <tr>        <td>1931年9月18日</td>        <td>九一八事变爆发。</td>    </tr>    <tr>        <td>1934年</td>        <td>日本岩波书店计划在岩波文库中收入鲁迅作品，编为一册。询问鲁迅意见时，鲁迅表示唯一的希望是能收入《藤野先生》。</td>    </tr>    <tr>        <td>1935年6月</td>        <td>岩波文库的《鲁迅选集》出版。藤野的儿子恒弥，所在学校的老师菅好春在读此书时发现《藤野先生》即是藤野严九郎，便告知恒弥。藤野由此得知鲁迅已成为著名作家。</td>    </tr>    <tr>        <td>1936年2月26日</td>        <td>二二六事件爆发。日本开始加速对外扩张。</td>    </tr>    <tr>        <td>1936年10月19日</td>        <td>鲁迅因病逝世，年仅 55 岁。年底，得知消息后的新闻记者坪田利雄等三人拜访藤野。</td>    </tr>    <tr>        <td>1937年3月</td>        <td>对藤野的访谈《谨忆周树人君》在《文学案内》杂志上发表。</td>    </tr>    <tr>        <td>1937年7月7日</td>        <td>七七事变爆发。据藤野两个儿子的老师竹内静回忆，藤野曾说：“中国是将文化教给日本的先生，这样的战争必须早日停止。”</td>    </tr>    <tr>        <td>1938年</td>        <td>藤野的长子恒弥进入东北帝大医学部，毕业后被征兵成为军医。</td>    </tr>    <tr>        <td>1945年1月</td>        <td>恒弥在前线病死。藤野深受打击，从此一蹶不振。</td>    </tr>    <tr>        <td>1945年8月10日</td>        <td>藤野在路上晕倒，次日上午逝世，享年 71 岁。此时距日本投降只有四天。</td>    </tr>    <tr>        <td>1945年8月15日</td>        <td>日本投降。</td>    </tr></table><br/><h3 id="在这之后"><a href="#在这之后" class="headerlink" title="在这之后:"></a>在这之后:</h3><table>    <tr>        <td style="width:130px;"><b>时间</b></td>        <td><b>事件</b></td>    </tr>    <tr>        <td>1949年10月1日</td>        <td>新中国成立。</td>    </tr>    <tr>        <td>1956年</td>        <td>鲁迅遗孀许广平托鲁迅的老朋友内山完造代为祭拜藤野的墓。</td>    </tr>    <tr>        <td>1960年</td>        <td>仙台建立“鲁迅之碑”。</td>    </tr>    <tr>        <td>1968年3月</td>        <td>许广平病逝。</td>    </tr>    <tr>        <td>1972年9月29日</td>        <td>中日双方发表联合声明，中日邦交正常化。</td>    </tr>    <tr>        <td>1980年</td>        <td>在藤野的出生地芦原下番，建立了由鲁迅之子周海婴书写的“藤野严九郎碑”。</td>    </tr></table>]]></content>
     
     
-    <summary type="html">University of Auckland COMPSCI 711 - Parallel and Distributed Computing</summary>
+    <summary type="html">两个人，两个国家，四条线索在一段混乱的历史中交错穿插。</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>[Notes] Probability Distributions</title>
+    <link href="https://cwgavin.github.io/posts/Probability%20Distributions/"/>
+    <id>https://cwgavin.github.io/posts/Probability%20Distributions/</id>
+    <published>2020-12-04T02:28:00.000Z</published>
+    <updated>2021-03-26T06:06:03.693Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Self-learning notes of probability distributions<br>(exported from OneNote)</p></blockquote><br/><object data="Probability Distributions.pdf" type="application/pdf" width="100%" height="820px">       <embed src="Probability Distributions.pdf">       <center>            This browser/device does not support PDFs.<br/>Please use a computer to view it.<br/><br/>            请用电脑打开该网页。        </center>       </embed></object> ]]></content>
+    
+    
+    <summary type="html">A brief overview of some probability distributions.</summary>
     
     
     
@@ -46,6 +63,25 @@
     
     
     <summary type="html">University of Auckland STATS 769 - Advanced Data Science Practice</summary>
+    
+    
+    
+    
+    <category term="Notes" scheme="https://cwgavin.github.io/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>COMPSCI 711 Notes</title>
+    <link href="https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-711-Notes/"/>
+    <id>https://cwgavin.github.io/posts/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-COMPSCI-711-Notes/</id>
+    <published>2020-11-21T00:31:00.000Z</published>
+    <updated>2020-11-21T00:35:23.502Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Revision notes for the final exam of<br><i>University of Auckland COMPSCI 711 - Parallel and Distributed Computing</i><br>(exported from OneNote)</p></blockquote><br/><object data="compsci-711.pdf" type="application/pdf" width="100%" height="820px">       <embed src="compsci-711.pdf">       <center>            This browser/device does not support PDFs.<br/>Please use a computer to view it.<br/><br/>            请用电脑打开该网页。        </center>       </embed></object> ]]></content>
+    
+    
+    <summary type="html">University of Auckland COMPSCI 711 - Parallel and Distributed Computing</summary>
     
     
     
