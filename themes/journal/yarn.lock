@@ -272,13 +272,15 @@ braces@^2.3.0, braces@^2.3.1:
     to-regex "^3.0.1"
 
 browserslist@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.2.1.tgz#257a24c879d1cd4016348eee5c25de683260b21d"
-  integrity sha512-1oO0c7Zhejwd+LXihS89WqtKionSbz298rJZKJgfrHIZhrV8AC15gw553VcB0lcEugja7IhWD7iAlrsamfYVPA==
+  version "4.16.6"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.6.tgz#d7901277a5a88e554ed305b183ec9b0c08f66fa2"
+  integrity sha512-Wspk/PqO+4W9qp5iUTJsa1B/QrYn1keNCcEP5OvP7WBwT4KaDly0uONYmC6Xa3Z5IqnUgS0KcgLYu1l74x0ZXQ==
   dependencies:
-    caniuse-lite "^1.0.30000890"
-    electron-to-chromium "^1.3.79"
-    node-releases "^1.0.0-alpha.14"
+    caniuse-lite "^1.0.30001219"
+    colorette "^1.2.2"
+    electron-to-chromium "^1.3.723"
+    escalade "^3.1.1"
+    node-releases "^1.1.71"
 
 builtin-modules@^1.0.0:
   version "1.1.1"
@@ -328,10 +330,10 @@ camelcase@^5.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
-caniuse-lite@^1.0.30000890:
-  version "1.0.30000892"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000892.tgz#344d2b51ee3ff5977537da4aa449c90eec40b759"
-  integrity sha512-X9rxMaWZNbJB5qjkDqPtNv/yfViTeUL6ILk0QJNxLV3OhKC5Acn5vxsuUvllR6B48mog8lmS+whwHq/QIYSL9w==
+caniuse-lite@^1.0.30000890, caniuse-lite@^1.0.30001219:
+  version "1.0.30001241"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001241.tgz#cd3fae47eb3d7691692b406568d7a3e5b23c7598"
+  integrity sha512-1uoSZ1Pq1VpH0WerIMqwptXHNNGfdl7d1cJUFs80CwQ/lVzdhTvsFZCeNFslze7AjsQnb4C85tzclPa1VShbeQ==
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -465,6 +467,11 @@ color@0.8.x:
   dependencies:
     color-convert "^0.5.0"
     color-string "^0.3.0"
+
+colorette@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.2.tgz#cbcc79d5e99caea2dbf10eb3a26fd8b3e6acfa94"
+  integrity sha512-MKGMzyfeuutC/ZJ1cba9NqcNpfeqMUcYmyF1ZFY6/Cn7CNSAKx6a+s48sqLqyAiZuaP2TcqMhoo+dlwFnVxT9w==
 
 colornames@0.0.2:
   version "0.0.2"
@@ -667,10 +674,10 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
-electron-to-chromium@^1.3.79:
-  version "1.3.79"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.79.tgz#774718f06284a4bf8f578ac67e74508fe659f13a"
-  integrity sha512-LQdY3j4PxuUl6xfxiFruTSlCniTrTrzAd8/HfsLEMi0PUpaQ0Iy+Pr4N4VllDYjs0Hyu2lkTbvzqlG+PX9NsNw==
+electron-to-chromium@^1.3.723:
+  version "1.3.762"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.762.tgz#3fa4e3bcbda539b50e3aa23041627063a5cffe61"
+  integrity sha512-LehWjRpfPcK8F1Lf/NZoAwWLWnjJVo0SZeQ9j/tvnBWYcT99qDqgo4raAfS2oTKZjPrR/jxruh85DGgDUmywEA==
 
 emits@1.0.x:
   version "1.0.2"
@@ -705,6 +712,11 @@ error-ex@^1.2.0, error-ex@^1.3.1:
   integrity sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==
   dependencies:
     is-arrayish "^0.2.1"
+
+escalade@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.1.tgz#d8cfdc7000965c5a0174b4a82eaa5c0552742e40"
+  integrity sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==
 
 escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
@@ -1775,12 +1787,10 @@ node-pre-gyp@^0.10.0:
     semver "^5.3.0"
     tar "^4"
 
-node-releases@^1.0.0-alpha.14:
-  version "1.0.0-alpha.14"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.0.0-alpha.14.tgz#da9e2780add4bbb59ad890af9e2018a1d9c0034b"
-  integrity sha512-G8nnF9cP9QPP/jUmYWw/uUUhumHmkm+X/EarCugYFjYm2uXRMFeOD6CVT3RLdoyCvDUNy51nirGfUItKWs/S1g==
-  dependencies:
-    semver "^5.3.0"
+node-releases@^1.1.71:
+  version "1.1.73"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.73.tgz#dd4e81ddd5277ff846b80b52bb40c49edf7a7b20"
+  integrity sha512-uW7fodD6pyW2FZNZnp/Z3hvWKeEW1Y8R1+1CnErE8cXFXzl5blBOoVB41CvMer6P6Q0S5FXDwcHgFd1Wj0U9zg==
 
 node-sass@^4.10.0:
   version "4.14.1"
